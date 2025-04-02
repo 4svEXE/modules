@@ -1,0 +1,19 @@
+<swiper-container
+  [effect]="swiperConfig.effect"
+  [grabCursor]="swiperConfig.grabCursor"
+  [centeredSlides]="swiperConfig.centeredSlides"
+  [slidesPerView]="swiperConfig.slidesPerView"
+  [loop]="swiperConfig.loop"
+  [slideToClickedSlide]="swiperConfig.slideToClickedSlide"
+  [coverflowEffect]="swiperConfig.coverflowEffect"
+  class="swiperContainer shadow-lg rounded-2xl transition transform"
+  [modules]="swiperConfig.modules"
+  [navigation]="false"
+>
+  <swiper-slide
+    class="tranding-slide_"
+    *ngFor="let slide of slides"
+  >
+    <img [src]="slide" />
+  </swiper-slide>
+</swiper-container>
