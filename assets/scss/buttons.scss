@@ -1,0 +1,78 @@
+@use "mixins"as *;
+
+.button-primary {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 16px 38px ;
+  border: none;
+  border-radius: 16px;
+  width: 100%;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  text-shadow: var(--box-shadow);
+  box-shadow: var(--box-shadow);
+  font-weight: 1000;
+
+  &:hover {
+    background-color: var(--primary-hover);
+  }
+
+  img {
+    width: 20px !important;
+    height: 20px;
+  }
+}
+
+.button-secondary {
+  @include button(var(--secondary-color), #000);
+}
+
+.link-button {
+  font-family: var(--font-family-headings);
+
+  position: relative;
+  font-weight: 400;
+  padding: 4px;
+
+  color: var(--text-color);
+
+  .dark & {
+    color: var(--text-color-headings-light);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    border-radius: 1px;
+    transition: .2s width;
+
+    background: var(--text-color);
+
+    .dark & {
+      background: var(--text-color-headings-light);
+    }
+  }
+
+  &:hover {
+    &::after {
+      width: 100%;
+    }
+  }
+
+  &.active {
+    &::after {
+      width: 100%;
+    }
+  }
+}
