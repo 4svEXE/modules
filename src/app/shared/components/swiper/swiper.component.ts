@@ -21,6 +21,7 @@ export class SwiperComponent {
     centeredSlides: true,
     slidesPerView: 1,
     loop: true,
+    nav: true,
     slideToClickedSlide: true,
     coverflowEffect: {
       rotate: 30,

@@ -1,10 +1,18 @@
 import { Component, AfterViewInit, ElementRef, ViewChildren, QueryList, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
-import { ReviewsComponent } from './reviews/reviews.component';
 import { CommonModule } from '@angular/common';
 import { Navigation, Pagination, EffectCoverflow } from "swiper/modules";
 import { ContactFormComponent } from "../../shared/components/contact-form/contact-form.component";
-import { SwiperComponent } from "../../shared/components/swiper/swiper.component";
+import { ReviewsComponent } from './reviews/reviews.component';
+
+import { HeroSectionComponent } from './hero-section/hero-section.component';
+import { ProblemSolutionComponent } from './problem-solution/problem-solution.component';
+import { HowItWorksComponent } from './how-it-works/how-it-works.component';
+import { ProfitCalculatorComponent } from './profit-calculator/profit-calculator.component';
+import { GalleryComponent } from './gallery/gallery.component';
+import { TrustSectionComponent } from './trust-section/trust-section.component';
+import { FAQComponent } from './faq/faq.component';
+import { FinalCTAComponent } from './final-cta/final-cta.component';
 
 @Component({
   selector: 'app-home',
@@ -14,10 +22,17 @@ import { SwiperComponent } from "../../shared/components/swiper/swiper.component
   imports: [
     TranslateModule,
     CommonModule,
-    ReviewsComponent,
+    HeroSectionComponent,
+    ProblemSolutionComponent,
+    HowItWorksComponent,
+    ProfitCalculatorComponent,
+    GalleryComponent,
+    TrustSectionComponent,
+    FAQComponent,
+    FinalCTAComponent,
     ContactFormComponent,
-    SwiperComponent
-],
+    ReviewsComponent
+  ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class HomeComponent implements AfterViewInit {

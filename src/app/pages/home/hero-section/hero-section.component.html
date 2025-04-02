@@ -1,0 +1,56 @@
+<section>
+  <div class="hero dark">
+    <video
+      class="background-video loaded"
+      [muted]="true"
+      autoplay
+      loop
+      playsinline
+      webkit-playsinline
+      disableRemotePlayback
+      preload="auto"
+      [attr.poster]="
+        videoLoaded ? './assets/img/hero-bg.webp' : './assets/img/hero-bg.webp'
+      "
+      (loadeddata)="onVideoLoaded()"
+    >
+      <source src="./assets/videos/hiro.mp4_" type="video/mp4" />
+    </video>
+
+    <div class="container flex flex-col gap-20">
+      <div class="hero-header grid grid-cols-3">
+        <div class="flex flex-col items-center justify-center gap-2">
+          <span>Встановлення</span>
+          <p> 3-5 днів</p>
+        </div>
+        <div class="bordered flex flex-col items-center justify-center gap-2">
+          <span>Окупається</span>
+          <p>1-2 роки</p>
+        </div>
+        <div class="flex flex-col items-center justify-center gap-2">
+          <span>Прибуток</span>
+          <p>від 3000$</p>
+        </div>
+      </div>
+
+      <div class="hero-title flex flex-col">
+        <!-- <p class="mx-2">
+          Ваш будинок для заробітку: <br />
+          встановіть за кілька днів – заробляйте роками
+        </p> -->
+        <h1>Модульний будинок <br/> для оренди</h1>
+        <!-- <p class="with-bg mt-3 mx-2 ">Встановлення за кілька днів!</p> -->
+  <app-marquee [messages]="messages" />
+
+
+        <!-- <img src="./assets/img/hero_decoration.png" class="hero_decoration" /> -->
+      </div>
+
+      <div class="cta_box flex flex-col gap-1 mb-10">
+        <a class="button-primary" href="#contact-form">Дізнатися вартість</a>
+        <p style="text-shadow: 1px 4px 7px black">та розрахувати прибуток</p>
+      </div>
+    </div>
+  </div>
+
+</section>

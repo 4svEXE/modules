@@ -1,19 +1,22 @@
-<swiper-container
-  [effect]="swiperConfig.effect"
-  [grabCursor]="swiperConfig.grabCursor"
-  [centeredSlides]="swiperConfig.centeredSlides"
-  [slidesPerView]="swiperConfig.slidesPerView"
-  [loop]="swiperConfig.loop"
-  [slideToClickedSlide]="swiperConfig.slideToClickedSlide"
-  [coverflowEffect]="swiperConfig.coverflowEffect"
-  class="swiperContainer shadow-lg rounded-2xl transition transform"
-  [modules]="swiperConfig.modules"
-  [navigation]="false"
->
-  <swiper-slide
-    class="tranding-slide_"
-    *ngFor="let slide of slides"
+<div class="carouselContainer">
+  <swiper-container
+    class="swiperContainer"
+    [effect]="swiperConfig.effect"
+    [grabCursor]="swiperConfig.grabCursor"
+    [centeredSlides]="swiperConfig.centeredSlides"
+    [slidesPerView]="swiperConfig.slidesPerView"
+    [loop]="swiperConfig.loop"
+    [slideToClickedSlide]="swiperConfig.slideToClickedSlide"
+    [coverflowEffect]="swiperConfig.coverflowEffect"
+    [modules]="swiperConfig.modules"
+    [navigation]="true"
+    [pagination]="false"
   >
-    <img [src]="slide" />
-  </swiper-slide>
-</swiper-container>
+    <swiper-slide
+      class="tranding-slide"
+      *ngFor="let slide of slides"
+    >
+      <img [src]="slide" alt="carousel image"/>
+    </swiper-slide>
+  </swiper-container>
+</div>

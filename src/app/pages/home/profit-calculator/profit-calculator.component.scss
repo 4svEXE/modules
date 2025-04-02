@@ -1,0 +1,110 @@
+.problem-item,
+.solution-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem; // space-x-4
+  border-radius: 0.5rem; // rounded-lg
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  padding: 1rem; // p-3
+
+  p {
+    color: rgba(255, 255, 255, 0.6);
+    text-align: left;
+    font-size: 14px;
+  }
+}
+
+.icon {
+  background-color: white;
+  border-radius: 50%; // rounded-full
+  padding: 0.75rem; // p-3
+  border: 1px solid rgba(255, 255, 255, 0.6);
+
+  svg {
+    width: 24px;
+  }
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+b {
+  font-weight: 600; // font-semibold
+  color: white;
+}
+
+// .............................
+
+.input-group {
+  position: relative;
+  margin: 20px 0;
+  width: 100%;
+
+  label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 16px;
+    color: #aaa;
+    transition: all 0.3s ease;
+    pointer-events: none;
+  }
+
+  input {
+    width: 100%;
+    padding: 10px 10px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+    background: transparent;
+    color: #fff;
+    margin-top: 15px;
+
+    &:focus {
+      border-bottom: 2px solid var(--accent-color);
+    }
+  }
+
+  label {
+    top: -10px;
+    left: 5px;
+    font-size: 12px;
+  }
+
+  .bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--accent-color);
+    transition: width 0.3s;
+  }
+
+  input:focus~.bar {
+    width: 100%;
+  }
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  padding: 12px;
+  margin-top: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  color: #fff;
+
+  span{
+    font-size: 12px;
+  }
+
+
+}

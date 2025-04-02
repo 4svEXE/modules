@@ -1,7 +1,6 @@
 📂 scss
 📂 structures
 ├── _index.scss
-// @use "tailwind" as *;
 @use "variables"as *;
 @use "wrappers"as *;
 @use "mixins"as *;
@@ -29,7 +28,7 @@ body {
   overflow-x: hidden;
 
   h2 {
-font-size: 36px;
+    font-size: 36px;
   }
 }
 

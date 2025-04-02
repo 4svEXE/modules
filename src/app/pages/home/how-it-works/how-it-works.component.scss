@@ -1,0 +1,22 @@
+.content{
+  border-radius: 12px;
+  background-color: var(--secondary-color);
+}
+
+figure{
+  border-radius: 0.5rem;
+  border: 1px solid #ffffff99;
+
+  figcaption{
+    // width: 50%;
+    text-align: center;
+  }
+  img{
+    display: block;
+    width: 40px;
+    margin: auto;
+    svg{
+      fill: #fff !important;
+    }
+  }
+}

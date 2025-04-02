@@ -1,0 +1,43 @@
+<section class="profit-section dark">
+  <div class="container">
+    <h2 class="title">Скільки можна <span>заробити?</span></h2>
+    <div class="profit-details">
+      <p>Середня вартість оренди: <span>100-150 євро/доба</span></p>
+      <p>Завантаження 70% = <span>~2 500 євро/місяць</span></p>
+      <p>Окупність від <span>2 років</span></p>
+    </div>
+    <div class="calculator twxt-white my-20">
+      <div class="input-group">
+        <label for="rentPrice">Ціна оренди (євро/доба):</label>
+        <input
+          type="number"
+          id="rentPrice"
+          [(ngModel)]="rentPrice"
+          placeholder="100"
+        />
+        <span class="bar"></span>
+      </div>
+
+      <div class="input-group">
+        <label for="occupancy">Завантаженість (%):</label>
+        <input
+          type="number"
+          id="occupancy"
+          [(ngModel)]="occupancy"
+          placeholder="3"
+        />
+        <span class="bar"></span>
+      </div>
+
+      <button class="button-primary mt-2" (click)="calculateProfit()">
+        Розрахувати
+      </button>
+    </div>
+    <div class="result">
+      <span>Очікуваний прибуток: </span>
+      <p>
+        <b>{{ result }}</b> євро/місяць
+      </p>
+    </div>
+  </div>
+</section>

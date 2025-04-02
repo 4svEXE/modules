@@ -26,8 +26,7 @@ export class ReviewsComponent {
     navText: ['<', '>'],
     responsive: {
       0: { items: 1, nav: false, margin: 0 },
-      400: { items: 2, nav: false, margin: 0 },
-      740: { items: 3, nav: false, margin: 0 },
+      740: { items: 2, nav: false, margin: 0 },
       940: { items: 4, nav: false, mouseDrag: true, touchDrag: true },
       1024: { items: 6, nav: false },
     },

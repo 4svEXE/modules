@@ -1,67 +1,81 @@
-<section class="container content">
-  <h2>Як все працює?</h2>
+<section class="container content dark gap-4">
+  <h2>Як це <span>працює</span></h2>
 
-  <div class="two-cols">
-    <figure class="p-2 flex-center flex-col">
-      <img src=".\assets\img\how-it-works\1.svg" alt="" />
-      <figcaption><b>Ви обираєте собі картину довподоби.</b></figcaption>
-      <picture class="arrow right">
-        <source
-          media="(min-width: 960px)"
-          srcset=".\assets\img\how-it-works\arr-right-down.svg"
+  <div class="flex flex-col gap-3">
+    <div class="two-cols">
+      <figure class="p-2 flex-center flex-col">
+        <img src=".\assets\img\how-it-works\step1.svg" alt="Залишаєте заявку" />
+        <figcaption>
+          <b>Ви залишаєте заявку – ми зв’язуємось та консультуємо</b>
+        </figcaption>
+        <picture class="arrow right">
+          <source
+            media="(min-width: 960px)"
+            srcset=".\assets\img\how-it-works\arr-right-down.svg"
+          />
+          <img src=".\assets\img\how-it-works\arr-down.svg" alt="arrow down" />
+        </picture>
+      </figure>
+    </div>
+
+    <div class="two-cols">
+      <figure class="p-2 flex-center flex-col">
+        <img src=".\assets\img\how-it-works\step2.svg" alt="Вибір моделі" />
+        <figcaption>
+          <b> Вибираєте модель будинку та додаткові опції</b>
+        </figcaption>
+        <picture class="arrow left">
+          <source
+            media="(min-width: 960px)"
+            srcset=".\assets\img\how-it-works\arr-left-down.svg"
+          />
+          <img src=".\assets\img\how-it-works\arr-down.svg" alt="arrow down" />
+        </picture>
+      </figure>
+    </div>
+
+    <div class="two-cols">
+      <figure class="p-2 flex-center flex-col">
+        <img
+          src=".\assets\img\how-it-works\step3.svg"
+          alt="Доставка та встановлення"
         />
-        <img src=".\assets\img\how-it-works\arr-down.svg" alt="arrow down" />
-      </picture>
-    </figure>
+        <figcaption><b>Доставка та встановлення за 3-5 днів</b></figcaption>
+        <picture class="arrow right">
+          <source
+            media="(min-width: 960px)"
+            srcset=".\assets\img\how-it-works\arr-right-down.svg"
+          />
+          <img src=".\assets\img\how-it-works\arr-down.svg" alt="arrow down" />
+        </picture>
+      </figure>
+    </div>
+    
+    <div class="two-cols">
+      
+
+      <figure class="p-2 flex-center flex-col">
+        <img src=".\assets\img\how-it-works\step4.svg" alt="Готовий будинок" />
+        <figcaption>
+          <b>Будинок готовий до використання та прибутку!</b>
+        </figcaption>
+        <picture class="arrow left">
+          <source
+            media="(min-width: 960px)"
+            srcset=".\assets\img\how-it-works\arr-left-down.svg"
+          />
+          <img src=".\assets\img\how-it-works\arr-down.svg" alt="arrow down" />
+        </picture>
+      </figure>
+    </div>
   </div>
+  <app-swiper [slides]="slides" />
+  <!-- CTA Box -->
 
-  <div class="two-cols reverse">
-    <figure class="p-2 flex-center flex-col">
-      <img src=".\assets\img\how-it-works\2.svg" alt="" />
-      <figcaption><b>Замовляєте та оплачуєте</b></figcaption>
-
-      <picture class="arrow left">
-        <source
-          media="(min-width: 960px)"
-          srcset=".\assets\img\how-it-works\arr-left-down.svg"
-        />
-        <img src=".\assets\img\how-it-works\arr-down.svg" alt="arrow down" />
-      </picture>
-    </figure>
-  </div>
-
-  <div class="two-cols">
-    <figure class="p-2 flex-center flex-col">
-      <img src=".\assets\img\how-it-works\3.svg" alt="" />
-      <figcaption><b>Майстер створює картину та надсилає вам</b></figcaption>
-      <picture class="arrow right">
-        <source
-          media="(min-width: 960px)"
-          srcset=".\assets\img\how-it-works\arr-right-down.svg"
-        />
-        <img src=".\assets\img\how-it-works\arr-down.svg" alt="arrow down" />
-      </picture>
-    </figure>
-  </div>
-
-  <div class="two-cols reverse">
-    <figure class="p-2 flex-center flex-col">
-      <img src=".\assets\img\how-it-works\4.svg" alt="" />
-      <figcaption><b>Ви забераєте картину на пошті</b></figcaption>
-      <picture class="arrow left">
-        <source
-          media="(min-width: 960px)"
-          srcset=".\assets\img\how-it-works\arr-left-down.svg"
-        />
-        <img src=".\assets\img\how-it-works\arr-down.svg" alt="arrow down" />
-      </picture>
-    </figure>
-  </div>
-
-  <div class="two-cols">
-    <figure class="p-2 flex-center flex-col">
-      <img src=".\assets\img\how-it-works\5.svg" alt="" />
-      <figcaption><b>Вона прекрашає ваш інтер'єр і залишаєте для нас відгук С:</b></figcaption>
-    </figure>
+  <div class="cta_box flex flex-col gap-1 my-10">
+    <a class="button-primary" href="#contact-form">Дізнатися більше </a>
+    <p style="text-shadow: 1px 4px 7px black" class="w-full text-center">
+      про встановлення
+    </p>
   </div>
 </section>

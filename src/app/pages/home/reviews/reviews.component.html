@@ -1,30 +1,40 @@
 <section class="container content">
-  <h2>Відгуки</h2>
+  <h2><span>Відгуки та кейси</span> клієнтів</h2>
 
-  <owl-carousel-o [options]="customOptions" *ngIf="!isLoading && !errorMessage">
-    <ng-container
-      *ngFor="let review of reviews; trackBy: trackById; let i = index"
-    >
-      <ng-template carouselSlide [id]="trackById(i, review.id)">
-        <div class="review-card box">
-          <div class="review-header">
-            <img
-              [src]="review.photo"
-              alt="Reviewer's Photo"
-              class="review-photo"
-            />
-            <div *ngIf="review.rating">
-              <div
-                class="review-rating"
-                [innerHTML]="getRatingStars(review.rating)"
-              ></div>
+  <div class="govno">
+    <owl-carousel-o [options]="customOptions" *ngIf="!isLoading && !errorMessage">
+      <ng-container *ngFor="let review of reviews; trackBy: trackById; let i = index">
+        <ng-template carouselSlide [id]="trackById(i, review.id)">
+          <div class="review-card box">
+            <div class="review-header">
+              <img
+                [src]="review.photo"
+                alt="Reviewer's Photo"
+                class="review-photo"
+              />
+              <div *ngIf="review.rating">
+                <div
+                  class="review-rating"
+                  [innerHTML]="getRatingStars(review.rating)"
+                ></div>
+              </div>
+              <h3 class="reviewer-name">{{ review.name }}</h3>
             </div>
-
-            <h3 class="reviewer-name">{{ review.name }}</h3>
+            <p class="review-text">{{ review.text }}</p>
           </div>
-          <p class="review-text">{{ review.text }}</p>
-        </div>
-      </ng-template>
-    </ng-container>
-  </owl-carousel-o>
+        </ng-template>
+      </ng-container>
+    </owl-carousel-o>
+  </div>
+
+  <!-- CTA Box -->
+  <div class="cta_box flex flex-col gap-1 my-10">
+    <a class="button-primary" href="#contact-form">Запитати</a>
+    <p>власника такого будинку</p>
+  </div>
+
+  <div *ngIf="isLoading" class="loading-spinner">Завантаження...</div>
+  <div *ngIf="errorMessage" class="error-message">
+    Сталася помилка: {{ errorMessage }}
+  </div>
 </section>

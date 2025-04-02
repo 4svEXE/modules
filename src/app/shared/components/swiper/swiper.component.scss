@@ -1,225 +1,84 @@
-swiper-slide {
-  height: 400px;
 
-  img {
-    width: 290px;
-
-  }
-}
-
-.tranding-slider-control {
-  width: 80px;
-  margin: auto;
-  display: flex;
-  justify-content: center;
-  position: relative;
-  bottom: 10px;
-}
-
-.slider-arrow {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  border: 1px solid #000;
-  color: black;
-}
-
-.swiper-button-prev::after,
-.swiper-button-next::after {
-  font-size: 10px;
-  /* Розмір стрілок */
-  font-weight: bold;
-  color: #000;
-  /* Колір стрілок */
-}
-
-.tranding-slider-control .slider-arrow {
-  filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
-}
-
+/* Основні стилі для контейнера */
 .carouselContainer {
   width: 100%;
-  max-width: 700px;
-  padding: 16px;
+  max-width: 320px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+  position: relative;
+  background-color: unset;
 }
 
+/* Стилі для самого слайдера */
 .swiperContainer {
   width: 100%;
-  padding-bottom: 40px;
-  padding-left: 50px;
-  user-select: none;
+  height: 400px; /* Можеш налаштувати висоту під свій дизайн */
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  background-color: unset; /* Легкий фон */
+  position: relative;
 }
 
+/* Стилі для слайдів */
 .tranding-slide {
-  height: max-content;
-  position: relative;
-}
-
-.tranding-slide-img img {
-  width: 290px;
-  height: 100%;
-  border-radius: 2rem;
-  object-fit: cover;
-}
-
-.swiper-slide-shadow-left,
-.swiper-slide-shadow-right {
-  display: none;
-}
-
-#tranding {
-  padding: 4rem 0;
-}
-
-@media (max-width: 1440px) {
-  #tranding {
-    padding: 7rem 0;
-  }
-}
-
-#tranding .tranding-slider {
-  height: 52rem;
-  padding: 2rem 0;
-  position: relative;
-}
-
-@media (max-width: 500px) {
-  #tranding .tranding-slider {
-    height: 45rem;
-  }
-}
-
-.tranding-slide {
-  position: relative;
-}
-
-.tranding-slide .tranding-slide-img img {
-  // width: 37rem;
-  // height: 42rem;
-  border-radius: 2rem;
-  object-fit: cover;
-}
-
-.tranding-slide .tranding-slide-content {
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-}
-
-.tranding-slide-content .food-price {
-  position: absolute;
-  top: 2rem;
-  right: 2rem;
-  color: var(--white);
-}
-
-.tranding-slide-content .tranding-slide-content-bottom {
-  position: absolute;
-  bottom: 2rem;
-  left: 2rem;
-  color: var(--white);
-}
-
-.food-rating {
-  padding-top: 1rem;
   display: flex;
-  gap: 1rem;
-}
-
-.swiper-slide-shadow-left,
-.swiper-slide-shadow-right {
-  display: none;
-}
-
-.tranding-slider-control {
-  position: relative;
-  bottom: 2rem;
-  display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: center;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: transform 0.3s ease; /* Плавний перехід для слайдів */
 }
 
-.tranding-slider-control .swiper-pagination .swiper-pagination-bullet {
-  filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
-}
-
-.tranding-slider-control .swiper-pagination .swiper-pagination-bullet-active {
-  background: var(--primary);
-}
-
-.swiper-slide {
-  width: 350px;
-  height: 350px;
-}
-
-.swiper-slide-active {
-  width: 400px;
-  height: 400px;
-}
-
-.tranding-slide-img img {
-  // width: 100%;
+.tranding-slide img {
+  width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 2rem;
-  transition: all 0.3s ease-in-out;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
 }
 
-.tranding-slider-control {
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
-  position: relative;
-  bottom: 10px;
-  /* Відступ знизу */
+/* Стилі для кнопок навігації */
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: rgba(0, 0, 0, 0.3); /* Трохи напівпрозоре тло */
+  color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+  z-index: 10;
+  transition: background-color 0.3s ease;
 }
 
-@media (max-width: 700px) {
-  .swiper-slide {
-    width: 320px;
-    height: 320px;
-  }
-
-  .swiper-slide-active {
-    width: 350px;
-    height: 350px;
-  }
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-color: rgba(0, 0, 0, 0.5); /* Зміна тла на ховері */
 }
 
-@media (max-width: 600px) {
-  .swiper-slide {
-    width: 300px;
-    height: 300px;
-  }
+/* Стилі для пагінації */
+.swiper-pagination-bullet {
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s ease;
+}
 
-  .swiper-slide-active {
-    width: 310px;
-    height: 310px;
-  }
+.swiper-pagination-bullet-active {
+  background-color: #f8a828; /* Колір активного булета */
+}
 
+// /* Покращення coverflow ефекту */
+.swiper-slide-shadow-left,
+.swiper-slide-shadow-right {
+  background: rgba(0, 0, 0, 0.5); /* Легкі тіні на бічних слайдах */
+}
+
+// .swiper-slide {
+//   transition: transform 0.3s ease-in-out; /* Плавний перехід */
+// }
+
+/* Оптимізація для мобільних пристроїв */
+@media (max-width: 768px) {
   .swiperContainer {
-    padding-left: 0;
-  }
-
-  .carouselContainer {
-    padding: 0px;
-  }
-}
-
-@media (max-width: 500px) {
-  .swiper-slide {
-    width: 250px;
-    height: 250px;
-  }
-
-  .swiper-slide-active {
-    width: 270px;
-    height: 270px;
+    max-width: 90%;
+    // height: 300px; /* Зменшена висота на мобільних */
   }
 }

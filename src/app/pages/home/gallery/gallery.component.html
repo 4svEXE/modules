@@ -1,0 +1,41 @@
+<section class="container content dark gap-4">
+  <h2> Галерея <span>Фото та відео</span></h2>
+
+  <div class="flex flex-col gap-3">
+    <div class="two-cols">
+      <figure class="p-2 flex-center flex-col">
+        <figcaption>
+          <b>Галерея фото з реальних локацій</b>
+
+          <app-swiper [slides]="slides" />
+        </figcaption>
+      </figure>
+    </div>
+
+    <div class="two-cols">
+      <figure class="p-2 flex-center flex-col">
+        <figcaption>
+          <b>Відеоогляд будинку зовні та всередині</b>
+        </figcaption>
+
+        <img src="./assets/img/tour/video-tour.jpg" alt="Відеоогляд будинку" />
+      </figure>
+    </div>
+
+    <div class="two-cols">
+      <figure class="p-2 flex-center flex-col">
+        <figcaption>
+          <b>360° огляд</b>
+        </figcaption>
+
+        <img src="./assets/img/tour/360-view.jpg" alt="360 огляд" />
+      </figure>
+    </div>
+  </div>
+
+  <!-- CTA Box -->
+  <div class="cta_box flex flex-col gap-1 my-10">
+    <a class="button-primary" href="#contact-form">Записатися</a>
+    <p>на онлайн-презентацію</p>
+  </div>
+</section>

@@ -21,17 +21,29 @@ h6 {
   }
 }
 
+p{
+  b{
+    color: var(--accent-color);
+  }
+}
+
 p {
   font-weight: normal;
 
   span,
-  strong {
+  strong, li {
     color: var(--accent-color);
   }
 
   .dark & {
     color: var(--text-color-headings-light);
   }
+}
+
+li, b{
+  .dark & {
+    color: var(--text-color-headings-light);
+  } 
 }
 
 h1 {
@@ -49,7 +61,7 @@ h2 {
   text-align: left;
   padding-bottom: 40px;
 
-  text-decoration: underline;
+  // text-decoration: underline;
 
   text-shadow: var(--box-shadow) !important;
   color: #fff;

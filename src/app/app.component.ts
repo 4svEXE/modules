@@ -26,16 +26,10 @@ import { CommonModule } from '@angular/common';
 export class AppComponent implements OnInit {
   baseHref = environment.baseHref;
   title = 'modules';
-  videoLoaded = false;
 
-  constructor(private languageService: LanguageService) {}
+  constructor(private languageService: LanguageService) { }
 
   ngOnInit(): void {
     this.languageService.loadLanguage();
-  }
-
-  // This method is triggered when the video is loaded
-  onVideoLoaded() {
-    this.videoLoaded = true;
   }
 }

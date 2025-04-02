@@ -28,65 +28,6 @@
     </svg>
   </a>
 
-  <section>
-    <div class="hero dark">
-      <video
-        class="background-video loaded"
-        [muted]="true"
-        autoplay
-        loop
-        playsinline
-        webkit-playsinline
-        disableRemotePlayback
-        preload="auto"
-        [attr.poster]="
-          videoLoaded ? './assets/img/hero-bg.jpg' : './assets/img/hero-bg.jpg'
-        "
-        (loadeddata)="onVideoLoaded()"
-      >
-        <!-- [attr.poster]="videoLoaded ? '' : './assets/img/hero-bg.jpg'" -->
-        <!-- <source src="./assets/videos/hiro.mp4" type="video/mp4" /> -->
-        <source src="./assets/videos/hiro.mp4_" type="video/mp4" />
-      </video>
-
-      <div class="container flex flex-col gap-20">
-        <div class="hero-header grid grid-cols-3">
-          <div class="flex flex-col items-center justify-center gap-2">
-            <span>Як довго?</span>
-            <p>11 днів</p>
-          </div>
-          <div class="bordered flex flex-col items-center justify-center gap-2">
-            <span>Коли?</span>
-            <p>24.07<span>та</span> 6.08</p>
-          </div>
-          <div class="flex flex-col items-center justify-center gap-2">
-            <span>Скільки?</span>
-            <p>11 місць</p>
-          </div>
-        </div>
-
-        <div class="hero-title flex flex-col">
-          <p class="mx-2">
-            Ти мрієш - ми виконуємо!
-          </p>
-          <h1>Ретрит на Балі</h1>
-          <p class="with-bg mt-1 mx-2">Це дешевше ніж ти думаєш!</p>
-
-          <img src="./assets/img/hero_decoration.png" class="hero_decoration" />
-        </div>
-
-        <div class="cta_box flex flex-col gap-1 mb-10">
-          <a class="button-primary" href="#contact-form">Забронювати</a>
-          <p style="text-shadow: 1px 4px 7px black;">Встигни до 14 квітня - економія 500є</p>
-        </div>
-      </div>
-
-      <img src="./assets/img/sand_gradient.png" class="sand_gradient" />
-      <img src="./assets/img/palm_leaf.png" class="hero_decoration_palm wobble-ver-left" />
-      <img src="./assets/img/palm2.png" class="hero_decoration_palm_2 wobble-ver-right" />
-    </div>
-  </section>
-
   <app-header />
 
   <router-outlet />
