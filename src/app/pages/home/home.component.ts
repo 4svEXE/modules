@@ -2,7 +2,6 @@ import { Component, AfterViewInit, ElementRef, ViewChildren, QueryList, CUSTOM_E
 import { TranslateModule } from '@ngx-translate/core';
 import { CommonModule } from '@angular/common';
 import { Navigation, Pagination, EffectCoverflow } from "swiper/modules";
-import { ContactFormComponent } from "../../shared/components/contact-form/contact-form.component";
 import { ReviewsComponent } from './reviews/reviews.component';
 
 import { HeroSectionComponent } from './hero-section/hero-section.component';
@@ -30,7 +29,6 @@ import { FinalCTAComponent } from './final-cta/final-cta.component';
     TrustSectionComponent,
     FAQComponent,
     FinalCTAComponent,
-    ContactFormComponent,
     ReviewsComponent
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],

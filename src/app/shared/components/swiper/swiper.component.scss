@@ -23,6 +23,7 @@
 
 /* Стилі для слайдів */
 .tranding-slide {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -56,29 +57,25 @@
 }
 
 /* Стилі для пагінації */
-.swiper-pagination-bullet {
-  background-color: rgba(0, 0, 0, 0.5);
-  transition: background-color 0.3s ease;
-}
+// .swiper-pagination-bullet {
+//   background-color: rgba(0, 0, 0, 0.5);
+//   transition: background-color 0.3s ease;
+// }
 
-.swiper-pagination-bullet-active {
-  background-color: #f8a828; /* Колір активного булета */
-}
+// .swiper-pagination-bullet-active {
+//   background-color: #f8a828; /* Колір активного булета */
+// }
 
 // /* Покращення coverflow ефекту */
-.swiper-slide-shadow-left,
-.swiper-slide-shadow-right {
-  background: rgba(0, 0, 0, 0.5); /* Легкі тіні на бічних слайдах */
-}
-
-// .swiper-slide {
-//   transition: transform 0.3s ease-in-out; /* Плавний перехід */
+// .swiper-slide-shadow-left,
+// .swiper-slide-shadow-right {
+//   background: rgba(0, 0, 0, 0.5); /* Легкі тіні на бічних слайдах */
 // }
 
 /* Оптимізація для мобільних пристроїв */
 @media (max-width: 768px) {
   .swiperContainer {
-    max-width: 90%;
+    max-width: 100%;
     // height: 300px; /* Зменшена висота на мобільних */
   }
 }

@@ -2,7 +2,8 @@
   width: 100%;
   max-width: 450px;
   margin: 0 auto;
-  background-color: #335183;
+  border-radius: 12px;
+  background-color: var(--bg-color);
 
 
   .form-group {
@@ -26,7 +27,7 @@
       transition: border-color 0.3s ease;
 
       &:focus {
-        border-color: #007bff;
+        border-color: var(--accent-hover);
         outline: none;
       }
 

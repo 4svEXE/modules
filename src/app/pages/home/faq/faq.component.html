@@ -1,1 +1,25 @@
-<p>faq works!</p>
+<section class="faq-section container content">
+  <h2>Часті запитання</h2>
+
+  <div class="faq-list">
+    <div
+      class="faq-item"
+      *ngFor="let faq of faqs; let i = index"
+      (click)="toggleFAQ(i)"
+      [class.open]="faq.open"
+    >
+      <div class="faq-question">
+        <span>{{ faq.question }}</span>
+        <span class="arrow" [class.rotate]="faq.open">▼</span>
+      </div>
+      <div class="faq-answer" *ngIf="faq.open">
+        <p>{{ faq.answer }}</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="cta-box">
+    <p class="w-full text-center text-white">Є ще питання? </p>
+    <a class="button-primary" href="#contact-form">Отримати консультацію</a>
+  </div>
+</section>

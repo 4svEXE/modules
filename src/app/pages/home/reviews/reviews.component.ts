@@ -1,37 +1,42 @@
+import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
-import { CarouselModule, OwlOptions } from 'ngx-owl-carousel-o';
+import { Navigation, Pagination, EffectCoverflow } from 'swiper/modules';
+import { register } from 'swiper/element/bundle';
 import { reviewsJSON } from '../../../entities/review/review.db';
+
+register(); // Реєструємо Swiper як Web Component
 
 @Component({
   selector: 'app-reviews',
-  imports: [CommonModule, CarouselModule],
+  standalone: true,
+  imports: [CommonModule],
   templateUrl: './reviews.component.html',
   styleUrls: ['./reviews.component.scss'],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class ReviewsComponent {
   isLoading = false;
   errorMessage = '';
-
   reviews = reviewsJSON;
 
-  customOptions: OwlOptions = {
-    loop: false,
-    mouseDrag: false,
-    touchDrag: true,
-    pullDrag: false,
-    dots: false,
-    margin: 12,
-    navSpeed: 700,
-    navText: ['<', '>'],
-    responsive: {
-      0: { items: 1, nav: false, margin: 0 },
-      740: { items: 2, nav: false, margin: 0 },
-      940: { items: 4, nav: false, mouseDrag: true, touchDrag: true },
-      1024: { items: 6, nav: false },
+  swiperConfig = {
+    effect: 'coverflow',
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: 1,
+    loop: true,
+    slideToClickedSlide: true,
+    coverflowEffect: {
+      rotate: 30,
+      stretch: 80,
+      depth: 200,
+      modifier: 1.5,
+      slideShadows: false,
     },
-    nav: true,
+    spaceBetween: 10,  // Додаємо відстань між слайдами
+    modules: [EffectCoverflow, Pagination, Navigation],
   };
+
 
   trackById(index: number, review: any): string {
     return `original-${review.id}-${index}`;

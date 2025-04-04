@@ -35,6 +35,11 @@
   }
 }
 
+.content{
+  border-radius: 12px;
+  background-color: var(--secondary-color) !important;
+}
+
 .two-cols {
   display: grid;
   grid-template-columns: 1fr 1fr;

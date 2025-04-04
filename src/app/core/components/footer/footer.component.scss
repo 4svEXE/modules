@@ -1,13 +1,10 @@
-.footer {
+footer {
   background-color: #1a1a1a;
   color: #fff;
   padding: 40px 0;
   padding-bottom: 80px;
   font-size: 14px;
 
-  .h-screen {
-    // min-height: 50vh;
-  }
   .organizer{
     display: flex;
     flex-direction: column;
@@ -16,12 +13,9 @@
     gap: 8px;
   }
 
-  h3 {
-    font-size: 32px;
-    font-weight: 600;
-    margin-bottom: 10px;
-    color: #0056b3;
-    text-align: center;
+  h3{
+    font-size: 24px;
+    color: var(--accent-color);
   }
 
   svg {

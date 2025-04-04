@@ -14,10 +14,10 @@ export class HowItWorksComponent {
     './assets/img/gallery/2.jpg',
     './assets/img/gallery/3.jpg',
     './assets/img/gallery/4.jpg',
-    // './assets/img/gallery/5.jpg',
-    // './assets/img/gallery/6.jpg',
-    // './assets/img/gallery/7.jpg',
-    // './assets/img/gallery/8.jpg',
-    // './assets/img/gallery/9.jpg',
+    './assets/img/gallery/5.jpg',
+    './assets/img/gallery/6.jpg',
+    './assets/img/gallery/7.jpg',
+    './assets/img/gallery/8.jpg',
+    './assets/img/gallery/9.jpg',
   ]
 }
