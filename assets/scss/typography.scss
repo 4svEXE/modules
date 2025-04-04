@@ -43,7 +43,7 @@ p {
 li, b{
   .dark & {
     color: var(--text-color-headings-light);
-  } 
+  }
 }
 
 h1 {
@@ -73,7 +73,7 @@ h2 {
   @media (max-width: $media-tablet) {
     display: inline-block;
     text-align: center;
-    font-size: 38px !important;
+    font-size: 32px !important;
     font-weight: bold !important;
 
     padding-bottom: 20px;
