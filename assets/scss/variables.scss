@@ -1,10 +1,10 @@
 :root {
   // Colors
   --primary-color: #255F38;
-  --primary-hover: #255F3899;
+  --primary-hover: rgba(--primary-color, 0.65);
 
   --secondary-color: #27391C;
-  --secondary-hover: #27391C99;
+  --secondary-hover: rgba(--secondary-color, 0.65);
 
   --accent-color: #D98324;
   --accent-hover: #D98324;
@@ -13,6 +13,9 @@
   --text-color-headings: #242424;
   --text-color-headings-light: #fff;
   --text-color: #242424;
+
+  --swiper-theme-color: var(--secondary-color);
+  --swiper-navigation-color: var(--secondary-color);
 
   // TypographyX
   --font-family-headings: "Jura", sans-serif;
