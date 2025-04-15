@@ -1,9 +1,10 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { CallToActionComponent } from "../../../shared/components/call-to-action/call-to-action.component";
 
 @Component({
   selector: 'app-faq',
-  imports: [CommonModule],
+  imports: [CommonModule, CallToActionComponent],
   templateUrl: './faq.component.html',
   styleUrl: './faq.component.scss'
 })

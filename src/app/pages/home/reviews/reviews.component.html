@@ -2,39 +2,52 @@
   <h2><span>Відгуки та кейси</span> клієнтів</h2>
 
   <div class="carouselContainer">
-      <swiper-container
-        class="swiperContainer"
-        [effect]="swiperConfig.effect"
-        [grabCursor]="swiperConfig.grabCursor"
-        [centeredSlides]="swiperConfig.centeredSlides"
-        [slidesPerView]="swiperConfig.slidesPerView"
-        [loop]="swiperConfig.loop"
-        [slideToClickedSlide]="swiperConfig.slideToClickedSlide"
-        [coverflowEffect]="swiperConfig.coverflowEffect"
-        [modules]="swiperConfig.modules"
-        [spaceBetween]="swiperConfig.spaceBetween"
-        [navigation]="true"
+    <swiper-container
+      class="swiperContainer"
+      [effect]="swiperConfig.effect"
+      [grabCursor]="swiperConfig.grabCursor"
+      [centeredSlides]="swiperConfig.centeredSlides"
+      [slidesPerView]="swiperConfig.slidesPerView"
+      [loop]="swiperConfig.loop"
+      [slideToClickedSlide]="swiperConfig.slideToClickedSlide"
+      [coverflowEffect]="swiperConfig.coverflowEffect"
+      [modules]="swiperConfig.modules"
+      [spaceBetween]="swiperConfig.spaceBetween"
+      [navigation]="true"
+    >
+      <swiper-slide
+        *ngFor="let review of reviews; trackBy: trackById; let i = index"
+        class="review-card box"
       >
-        <swiper-slide
-          *ngFor="let review of reviews; trackBy: trackById; let i = index"
-          class="review-card box"
-        >
-          <div class="review-header">
-            <img
-              [src]="review.photo"
-              alt="Reviewer's Photo"
-              class="review-photo"
-            />
-            <h3 class="reviewer-name">{{ review.name }}</h3>
-          </div>
-          <p class="review-text">{{ review.text }}</p>
-        </swiper-slide>
-      </swiper-container>
+        <div class="review-header">
+          <img
+            [src]="review.photo"
+            alt="Reviewer's Photo"
+            class="review-photo"
+          />
+          <h3 class="reviewer-name">{{ review.name }}</h3>
+        </div>
+        <p class="review-text">{{ review.text }}</p>
+      </swiper-slide>
+    </swiper-container>
   </div>
 
-  <!-- CTA Box -->
-  <div class="cta_box flex flex-col gap-1 my-10">
-    <a class="button-primary" href="#contact-form">Запитати</a>
-    <p class="text-white w-full text-center">власника такого будинку</p>
+  <h2 class="mt-10">Додаткові  <span>бонуси</span> </h2>
+
+  <div class="flex flex-col gap-4 my-4">
+    <p class="review-card dark p-2 my-2 text-white">
+      При покупці нашого модульного будинку в подарунок ви отримуєте <strong>pdf інструкцію</strong> -
+      покроковий план як почати заробляти на ньому одразу після встановлення!
+    </p>
+    <p class="review-card dark p-2 my-2 text-white">
+      Крім того ви стаєте учасником <strong>закритого ком'юніті</strong> власників модульних
+      будинків для обміну ідеями та досвідом.
+    </p>
   </div>
+
+  <app-call-to-action
+    link="#contact-form"
+    title="Долучитись"
+    text="до закритого ком'юніті власників модульних будинків"
+  />
 </section>

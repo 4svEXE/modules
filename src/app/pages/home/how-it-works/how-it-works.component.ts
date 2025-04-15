@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { SwiperComponent } from "../../../shared/components/swiper/swiper.component";
+import { CallToActionComponent } from "../../../shared/components/call-to-action/call-to-action.component";
 
 @Component({
   selector: 'app-how-it-works',
-  imports: [SwiperComponent],
+  imports: [SwiperComponent, CallToActionComponent],
   templateUrl: './how-it-works.component.html',
   styleUrl: './how-it-works.component.scss'
 })

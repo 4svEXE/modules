@@ -6,7 +6,7 @@
 /* Основні стилі для контейнера */
 .carouselContainer {
   width: 100%;
-  padding: 12px;
+  // padding: 12px;
   box-sizing: border-box;
   position: relative;
   background-color: unset;
@@ -14,6 +14,7 @@
 
 /* Стилі для самого слайдера */
 .swiperContainer {
+  padding: 2px;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -25,14 +26,22 @@
 
 .review-card {
   margin: auto;
+  border: 1px solid #ddd;
 
   display: flex;
   flex-direction: column;
   gap: 10px;
   padding: 15px;
-  border: 1px solid #ddd;
   border-radius: 8px;
   background: var(--primary-color);
+
+  strong{
+    display: contents;
+  }
+
+  &.dark{
+    background: #ffffff00;
+  }
 }
 
 .review-header {
@@ -43,7 +52,7 @@
 
 .review-photo {
   width: 100%;
-  height: 150px;
+  height: 350px;
   object-fit: cover;
 }
 

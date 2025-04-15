@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-call-to-action',
@@ -7,5 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './call-to-action.component.scss'
 })
 export class CallToActionComponent {
-
+  @Input() link = '#contact-form'
+  @Input() title = 'Дізнатися вартість'
+  @Input() text = 'та розрахувати прибуток'
 }

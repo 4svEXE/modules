@@ -1,23 +1,24 @@
 import { Component } from '@angular/core';
 import { SwiperComponent } from "../../../shared/components/swiper/swiper.component";
+import { CallToActionComponent } from "../../../shared/components/call-to-action/call-to-action.component";
 
 @Component({
   selector: 'app-gallery',
-  imports: [SwiperComponent],
+  imports: [SwiperComponent, CallToActionComponent],
   templateUrl: './gallery.component.html',
   styleUrl: './gallery.component.scss'
 })
 export class GalleryComponent {
   slides = [
-    // './assets/img/gallery/0.jpg',
-    './assets/img/gallery/1.jpg',
-    './assets/img/gallery/2.jpg',
-    './assets/img/gallery/3.jpg',
-    './assets/img/gallery/4.jpg',
-    // './assets/img/gallery/5.jpg',
-    // './assets/img/gallery/6.jpg',
-    // './assets/img/gallery/7.jpg',
-    // './assets/img/gallery/8.jpg',
-    // './assets/img/gallery/9.jpg',
+    './assets/img/gallery/interior/1.webp',
+    './assets/img/gallery/interior/2.webp',
+    './assets/img/gallery/interior/3.webp',
+    './assets/img/gallery/interior/4.webp',
+    './assets/img/gallery/interior/5.webp',
+    './assets/img/gallery/interior/6.webp',
+    './assets/img/gallery/interior/7.webp',
+    './assets/img/gallery/interior/8.webp',
+    './assets/img/gallery/interior/9.webp',
+    './assets/img/gallery/interior/10.webp',
   ]
 }

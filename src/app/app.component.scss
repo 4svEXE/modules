@@ -1,4 +1,4 @@
-.button-widget{
+.button-widget, .button-widget-whatsup{
   position: fixed;
   right: 20px;
   bottom: 20px;
@@ -14,4 +14,9 @@
   svg{
     width: 30px;
   }
+}
+
+.button-widget-whatsup{
+  bottom: 80px;
+  animation-delay: 2s;
 }

@@ -1,13 +1,14 @@
 :root {
   // Colors
   --primary-color: #255F38;
-  --primary-hover: rgba(--primary-color, 0.65);
+  // --primary-hover: rgba(--primary-color, 0.65);
+  --primary-hover: #255F3899;
 
   --secondary-color: #27391C;
   --secondary-hover: rgba(--secondary-color, 0.65);
 
   --accent-color: #D98324;
-  --accent-hover: #D98324;
+  --accent-hover: #D9832488;
 
   --bg-color: #18230F;
   --text-color-headings: #242424;
@@ -15,7 +16,7 @@
   --text-color: #242424;
 
   --swiper-theme-color: var(--accent-color);
-  --swiper-navigation-color: var(--accent-color);
+  --swiper-navigation-color: var(--accent-hover);
 
   // TypographyX
   --font-family-headings: "Jura", sans-serif;

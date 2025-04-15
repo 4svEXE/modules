@@ -61,6 +61,8 @@
       </div>
     </div>
 
+    <p class="p-2 m-2 text-white text-xs">Натискаючи кнопку тижче ви автоматично погоджуєтесь на обробку ваших даних.</p>
+
     <button
       type="submit"
       [disabled]="contactForm.invalid"
@@ -76,26 +78,23 @@
   </form>
 
   <div class="flex box flex-col gap-4 mt-8" *ngIf="isSent">
-    <h3 class="text-2xl font-semibold ">Успішно надіслано!</h3>
+    <h3 class="text-2xl font-semibold">Успішно надіслано!</h3>
     <p class="text-lg text-">
       Дякуємо за вашу заявку! Скоро ми з вами зв'яжемось.
-<br/>
-<br/>
-      Запрошую долучатись до мого телеграму та інстаграму!
+      <br />
+      <br />
+      Запрошую долучатись до ком'юніті власників модульних будинків!
     </p>
     <div class="flex gap-4">
-      <a
+      <!-- <a
         href="https://t.me/victorie_honch"
         target="_blank"
         class="text-blue-500 hover:underline"
         >Telegram</a
-      >
-      <a
-        href="https://www.instagram.com/viktorika7/"
-        target="_blank"
-        class="text-blue-500 hover:underline"
-        >Instagram</a
-      >
+      > -->
+      todo add comunity
+
+      <!-- todo add comunity -->
     </div>
   </div>
 </div>

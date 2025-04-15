@@ -9,15 +9,13 @@
       webkit-playsinline
       disableRemotePlayback
       preload="auto"
-      [attr.poster]="
-        videoLoaded ? './assets/img/01.jpg' : './assets/img/01.jpg'
-      "
+      [attr.poster]="videoLoaded ? './assets/img/01.jpg' : ''"
       (loadeddata)="onVideoLoaded()"
     >
-      <source src="./assets/videos/hiro.mp4_" type="video/mp4" />
+      <source src="./assets/videos/hiro.mp4" type="video/mp4" />
     </video>
 
-    <div class="container flex flex-col gap-20">
+    <div class="container flex flex-col gap-20" style="margin-top: 0">
       <div class="hero-header grid grid-cols-3">
         <div class="flex flex-col items-center justify-center gap-2">
           <span>Встановлення</span>
@@ -25,26 +23,28 @@
         </div>
         <div class="bordered flex flex-col items-center justify-center gap-2">
           <span>Окупається</span>
-          <p>1-2 роки</p>
+          <p>2-3 роки</p>
         </div>
         <div class="flex flex-col items-center justify-center gap-2">
           <span>Прибуток</span>
-          <p>від 3000$</p>
+          <p>від 80$ в день</p>
         </div>
       </div>
 
       <div class="hero-title flex flex-col">
         <h1>
-          Модульний будинок <br />
-          для оренди
+          Крихітні будинки <br />
+          з величезною <br />
+          дохідністю.
         </h1>
         <app-marquee [messages]="messages" />
       </div>
 
-      <div class="cta_box flex flex-col gap-1 mb-10">
-        <a class="button-primary" href="#contact-form">Дізнатися вартість</a>
-        <p style="text-shadow: 1px 4px 7px black">та розрахувати прибуток</p>
-      </div>
+      <app-call-to-action
+        link="#contact-form"
+        title="Дізнатися вартість"
+        text="та розрахувати свій прибуток"
+      />
     </div>
   </div>
 </section>

@@ -1,13 +1,13 @@
 .faq-section {
   text-align: center;
-  padding: 4rem 2rem;
-  background-color: var(--light-bg);
-  color: var(--dark-text);
+  // padding: 4rem 2rem;
+  // background-color: var(--light-bg);
+  // color: var(--dark-text);
 
-  h2 {
-    font-size: 2rem;
-    margin-bottom: 2rem;
-  }
+  // h2 {
+  //   font-size: 2rem;
+  //   margin-bottom: 2rem;
+  // }
 
   .faq-list {
     display: flex;
@@ -18,22 +18,18 @@
   }
 
   .faq-item {
-    background: white;
+    background: #d5ffe3;
     border-radius: 8px;
-    padding: 1rem;
+    padding: 12px;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-
-    &.open {
-      // background-color: var(--primary-light);
-    }
 
     .faq-question {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      font-size: 1.2rem;
+      font-size: 14px;
       font-weight: bold;
     }
 

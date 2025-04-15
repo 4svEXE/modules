@@ -1,4 +1,4 @@
-<section class="container  dark gap-4">
+<section class="container dark gap-4">
   <h2>Як це <span>працює</span></h2>
 
   <div class="flex flex-col gap-3">
@@ -62,20 +62,18 @@
 
   <div class="two-cols">
     <figure class="p-2 flex-center flex-col">
-      <app-swiper [slides]="slides" />
-
       <figcaption>
         <b>Більше фото!</b>
       </figcaption>
+
+      <app-swiper [slides]="slides" />
     </figure>
   </div>
 
-  <!-- CTA Box -->
-
-  <div class="cta_box flex flex-col gap-1 my-10">
-    <a class="button-primary" href="#contact-form">Дізнатися більше </a>
-    <p style="text-shadow: 1px 4px 7px black" class="w-full text-center">
-      про встановлення
-    </p>
-  </div>
+  <app-call-to-action
+  class="mt-10"
+    link="#contact-form"
+    title="Дізнатися більше"
+    text="про встановлення модульних будинків"
+  />
 </section>

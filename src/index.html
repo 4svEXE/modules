@@ -15,16 +15,5 @@
     <noscript>
       Please enable JavaScript to continue using this application.
     </noscript>
-
-    <script>
-      window.addEventListener("load", function () {
-      const iframeHeight = document.body.scrollHeight;
-      window.parent.postMessage(
-        { type: "iframeHeight", height: iframeHeight },
-        "*"
-      );
-    });
-    </script>
-
   </body>
 </html>

@@ -112,23 +112,7 @@
     }
   }
 
-  .cta_box {
-    width: max-content;
-    position: absolute;
-    bottom: 80px;
-    left: 50%;
-    transform: translateX(-50%);
-    text-shadow: var(--box-shadow);
 
-    p {
-      color: #fff;
-      font-size: 16px;
-      font-family: "Montserrat", sans-serif;
-      line-height: 20px;
-      letter-spacing: -1px;
-      text-align: center;
-    }
-  }
 
   .hero_decoration_palm {
     position: absolute;

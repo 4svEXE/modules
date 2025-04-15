@@ -1,4 +1,4 @@
-<section class="bg-bg-color py-20 px-5 md:px-20 rounded-2xl my-8 dark">
+<section class="bg-bg-color py-10 md:px-20 rounded-2xl my-8 dark">
   <div class="max-w-screen-xl mx-auto text-center">
     <!-- Problem and Solution Block -->
     <div class="problem-solution">
@@ -8,11 +8,14 @@
       <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
         <!-- Problem Block -->
         <div
-          class="problem bg-secondary-color p-6 transition-all hover:bg-secondary-hover"
+          class="problem bg-secondary-color transition-all hover:bg-secondary-hover"
         >
           <h3 class="text-xl font-semibold text-white mb-4">
-            Проблеми <span>традиційного будівництва</span>
+            Проблеми  <br /><span>традиційного будівництва</span>
           </h3>
+
+          <img src="./assets/img/building.jpg" alt="">
+
           <div class="space-y-4">
             <!-- Problem Block -->
             <div class="problem-item">
@@ -41,7 +44,7 @@
                 </svg>
               </div>
               <div class="flex flex-col items-start">
-                <b>Дорого та довго:</b>
+                <b>Довго:</b>
                 <p class="text-white">6-12 місяців для будівництва</p>
               </div>
             </div>
@@ -123,12 +126,13 @@
 
         <!-- Solution Block -->
         <div
-          class="solution bg-primary-color p-6 transition-all hover:bg-primary-hover"
+          class="solution bg-primary-color transition-all hover:bg-primary-hover"
         >
           <h3 class="text-xl font-semibold text-white mb-4">
             Наше рішення: <br />
-            <span>Модульний будинок</span>
+            <span>Крихітний будинок</span>
           </h3>
+          <img src="./assets/img/module.webp" alt="">
           <div class="space-y-4">
             <!-- Solution Block -->
             <div class="solution-item">
@@ -248,14 +252,11 @@
         </div>
       </div>
 
-      <!-- CTA Box -->
-
-      <div class="cta_box flex flex-col gap-1 my-10">
-        <a class="button-primary" href="#contact-form">Перевірити</a>
-        <p style="text-shadow: 1px 4px 7px black" class="w-full text-center">
-          чи підходить цей будинок для вашої ділянки
-        </p>
-      </div>
+        <app-call-to-action
+        link="#contact-form"
+        title="Перевірити"
+        text="чи підходить цей будинок для вашої ділянки"
+      />
     </div>
   </div>
 </section>
