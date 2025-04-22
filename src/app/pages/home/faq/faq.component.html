@@ -1,5 +1,8 @@
 <section class="faq-section container content_ my-10">
-  <h2>Часті <span>запитання</span></h2>
+  <h2>
+    {{ "HOME.FAQ.TITLE_1" | translate }}
+    <span>{{ "HOME.FAQ.TITLE_2" | translate }}</span>
+  </h2>
 
   <div class="faq-list">
     <div
@@ -9,18 +12,29 @@
       [class.open]="faq.open"
     >
       <div class="faq-question">
-        <span>{{ faq.question }}</span>
+        <span>{{ faq.question | translate }}</span>
         <span class="arrow" [class.rotate]="faq.open">▼</span>
       </div>
       <div class="faq-answer" *ngIf="faq.open">
-        <p>{{ faq.answer }}</p>
+        <p>{{ faq.answer | translate }}</p>
       </div>
     </div>
   </div>
 
-  <app-call-to-action
-    link="#contact-form"
-    title="Проконсультуватись"
-    text="Залишились запитання? Ми проконсультуємо."
-  />
+  <div class="cta_box flex flex-col mt-10">
+    <app-call-to-action
+      link="#contact-form"
+      [title]="'HOME.FAQ.CTA_TITLE' | translate"
+    />
+
+    <div class="divider">
+      <span>{{ "HOME.FAQ.CTA_DIVIDER" | translate }}</span>
+    </div>
+
+    <app-call-to-action
+      link="https://wa.me/1234567890"
+      [title]="'HOME.FAQ.CTA_2_TITLE' | translate"
+      [text]="'HOME.FAQ.CTA_2_TEXT' | translate"
+    />
+  </div>
 </section>

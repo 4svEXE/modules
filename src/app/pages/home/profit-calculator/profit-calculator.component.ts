@@ -15,7 +15,7 @@ export class ProfitCalculatorComponent {
 
   calculateProfit(): void {
     if (!this.rentPrice || !this.occupancy) {
-      this.result = 'Будь ласка, введіть коректні значення!';
+      this.result = 'error!';
       return;
     }
 

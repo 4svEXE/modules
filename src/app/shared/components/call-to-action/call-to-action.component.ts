@@ -8,6 +8,6 @@ import { Component, Input } from '@angular/core';
 })
 export class CallToActionComponent {
   @Input() link = '#contact-form'
-  @Input() title = 'Дізнатися вартість'
-  @Input() text = 'та розрахувати прибуток'
+  @Input() title = ''
+  @Input() text = ''
 }

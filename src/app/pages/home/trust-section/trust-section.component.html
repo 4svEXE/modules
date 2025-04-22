@@ -1,27 +1,48 @@
 <section class="trust-section container content dark">
-  <h2>Чому <span>нам можна довіряти?</span></h2>
+  <h2>
+    {{ "HOME.TRUST.TITLE" | translate }}
+    <span>{{ "HOME.TRUST.TITLE_HIGHLIGHT" | translate }}</span>
+  </h2>
 
   <ul class="trust-list">
     <li>
-      <img src="./assets/icons/license.svg" alt="Ліцензії" />
+      <img
+        src="./assets/icons/license.svg"
+        [alt]="'HOME.TRUST.LICENSE_ALT' | translate"
+      />
       <p>
-        Маємо всі необхідні <strong>ліцензії</strong>, сертифікати та
-        партнерства
+        {{ "HOME.TRUST.LICENSE_TEXT_1" | translate }}
+        <strong>{{ "HOME.TRUST.LICENSE_TEXT_2" | translate }}</strong>
+        {{ "HOME.TRUST.LICENSE_TEXT_3" | translate }}
       </p>
     </li>
     <li>
-      <img src="./assets/icons/guarantee.svg" alt="Гарантія" />
-      <p>Надаємо <strong>5 років гарантії</strong> на всі встановлення</p>
+      <img
+        src="./assets/icons/guarantee.svg"
+        [alt]="'HOME.TRUST.GUARANTEE_ALT' | translate"
+      />
+      <p>
+        {{ "HOME.TRUST.GUARANTEE_TEXT_1" | translate }}
+        <strong>{{ "HOME.TRUST.GUARANTEE_TEXT_2" | translate }}</strong>
+        {{ "HOME.TRUST.GUARANTEE_TEXT_3" | translate }}
+      </p>
     </li>
     <li>
-      <img src="./assets/icons/experience.svg" alt="Досвід" />
-      <p>Досвід успішних <strong>встановлень у Чехії</strong></p>
+      <img
+        src="./assets/icons/experience.svg"
+        [alt]="'HOME.TRUST.EXPERIENCE_ALT' | translate"
+      />
+      <p>
+        {{ "HOME.TRUST.EXPERIENCE_TEXT_1" | translate }}
+        <strong>{{ "HOME.TRUST.EXPERIENCE_TEXT_2" | translate }}</strong>
+        {{ "HOME.TRUST.EXPERIENCE_TEXT_3" | translate }}
+      </p>
     </li>
   </ul>
 
   <app-call-to-action
     link="#contact-form"
-    title="Замовити"
-    text="онлайн-презентацію"
+    [title]="'HOME.TRUST.CTA_TITLE' | translate"
+    [text]="'HOME.TRUST.CTA_TEXT' | translate"
   />
 </section>

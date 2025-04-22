@@ -14,7 +14,7 @@ export class TelegramService {
   constructor(private http: HttpClient) {}
 
   sendOrderNotification(orderDetails: string): Observable<any> {
-    const message = `📦 Балі - нове повідомлення!\n${orderDetails}`;
+    const message = `📦 Модульні будинки - нове повідомлення!\n${orderDetails}`;
 
     console.log('message :>> ', message);
     const payload = {

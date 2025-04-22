@@ -1,12 +1,13 @@
 <section class="final-cta container">
   <h2 class="">
-    Хочете <br />
-    <span>почати заробляти</span> на оренді <br />
-    <span>без складного будівництва</span>?
+    {{ 'HOME.FINAL_CTA.TITLE_LINE_1' | translate }} <br />
+    <span>{{ 'HOME.FINAL_CTA.TITLE_LINE_2' | translate }}</span> <br />
+    {{ 'HOME.FINAL_CTA.TITLE_LINE_3' | translate }}
   </h2>
 
   <div class="flex content my-5">
-    <app-marquee [messages]="messages" />
+    <app-marquee [messages]="[{ text: 'HOME.FINAL_CTA.CTA_MSG' | translate,  route: '' }]" />
+
   </div>
 
   <app-contact-form />

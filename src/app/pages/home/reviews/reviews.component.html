@@ -25,15 +25,16 @@
         <div class="review-header">
           <img
             [src]="review.photo"
-            [alt]="'HOME.REVIEWS.REVIEWER_PHOTO_ALT' | translate"
+            [alt]="'review.name' | translate"
             class="review-photo"
           />
-          <h3 class="reviewer-name">{{ review.name }}</h3>
+          <h3 class="reviewer-name">{{ review.name | translate }}</h3>
         </div>
-        <p class="review-text">{{ review.text }}</p>
+        <p class="review-text">{{ review.text | translate }}</p>
       </swiper-slide>
     </swiper-container>
   </div>
+
 
   <h2 class="mt-10">
     {{ 'HOME.BONUSES.TITLE' | translate }}

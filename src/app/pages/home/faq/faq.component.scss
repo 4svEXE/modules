@@ -1,18 +1,10 @@
 .faq-section {
   text-align: center;
-  // padding: 4rem 2rem;
-  // background-color: var(--light-bg);
-  // color: var(--dark-text);
-
-  // h2 {
-  //   font-size: 2rem;
-  //   margin-bottom: 2rem;
-  // }
 
   .faq-list {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 8px;
     max-width: 700px;
     margin: 0 auto;
   }
@@ -50,12 +42,34 @@
     }
   }
 
-  .cta-box {
-    margin-top: 2rem;
+  .divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 0;
 
+    &::before,
+    &::after {
+      content: "";
+      flex: 1;
+      border-bottom: 1px solid #666;
+    }
 
+    &::before {
+      margin-right: 1rem;
+    }
 
+    &::after {
+      margin-left: 1rem;
+    }
+
+    span {
+      font-weight: 500;
+      color: #666;
+      white-space: nowrap;
+    }
   }
+
 }
 
 @keyframes fadeIn {

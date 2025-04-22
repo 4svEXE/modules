@@ -1,9 +1,11 @@
 <div class="container contact-form-container">
-  <h2 class="text-2xl font-bold mb-4">Замовити дзвінок {{ message }}</h2>
+  <h2 class="text-2xl font-bold mb-4">
+    {{ "CONTACT_FORM.TITLE" | translate }} {{ message }}
+  </h2>
 
   <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" *ngIf="!isSent">
     <div class="form-group">
-      <label for="name">Ім'я</label>
+      <label for="name">{{ "CONTACT_FORM.NAME" | translate }}</label>
       <input id="name" formControlName="name" type="text" class="input" />
       <div
         *ngIf="
@@ -11,17 +13,17 @@
         "
         class="error"
       >
-        <small *ngIf="contactForm.get('name')?.hasError('required')"
-          >Ім'я є обов'язковим.</small
-        >
-        <small *ngIf="contactForm.get('name')?.hasError('minlength')"
-          >Ім'я повинно містити хоча б 2 символи.</small
-        >
+        <small *ngIf="contactForm.get('name')?.hasError('required')">
+          {{ "CONTACT_FORM.ERRORS.NAME_REQUIRED" | translate }}
+        </small>
+        <small *ngIf="contactForm.get('name')?.hasError('minlength')">
+          {{ "CONTACT_FORM.ERRORS.NAME_MINLENGTH" | translate }}
+        </small>
       </div>
     </div>
 
     <div class="form-group">
-      <label for="phone">Номер телефону</label>
+      <label for="phone">{{ "CONTACT_FORM.PHONE" | translate }}</label>
       <input id="phone" formControlName="phone" type="text" class="input" />
       <div
         *ngIf="
@@ -29,15 +31,14 @@
         "
         class="error"
       >
-        <small *ngIf="contactForm.get('phone')?.hasError('required')"
-          >Номер телефону є обов'язковим.</small
-        >
-        <!-- <small *ngIf="contactForm.get('phone')?.hasError('pattern')">Введіть правильний номер телефону (10 цифр).</small> -->
+        <small *ngIf="contactForm.get('phone')?.hasError('required')">
+          {{ "CONTACT_FORM.ERRORS.PHONE_REQUIRED" | translate }}
+        </small>
       </div>
     </div>
 
     <div class="form-group">
-      <label for="message">Коментар</label>
+      <label for="message">{{ "CONTACT_FORM.MESSAGE" | translate }}</label>
       <textarea
         id="message"
         formControlName="message"
@@ -50,7 +51,6 @@
       class="loader-container w-full flex items-center justify-center"
       *ngIf="loading"
     >
-      <!-- From Uiverse.io by Pradeepsaranbishnoi -->
       <div class="🤚 z-50">
         <div class="👉"></div>
         <div class="👉"></div>
@@ -61,40 +61,40 @@
       </div>
     </div>
 
-    <p class="p-2 m-2 text-white text-xs">Натискаючи кнопку тижче ви автоматично погоджуєтесь на обробку ваших даних.</p>
+    <p class="p-2 m-2 text-white text-xs">
+      {{ "CONTACT_FORM.PRIVACY_NOTICE" | translate }}
+    </p>
 
     <button
       type="submit"
       [disabled]="contactForm.invalid"
       class="button-primary"
     >
-      <div class="flex" *ngIf="!loading">Відправити</div>
+      <div class="flex" *ngIf="!loading">
+        {{ "CONTACT_FORM.SUBMIT" | translate }}
+      </div>
 
       <div class="loader-container" *ngIf="loading">
-        <!-- From Uiverse.io by JesusRafaelNavaCruz -->
         <div class="loader"></div>
       </div>
     </button>
   </form>
 
-  <div class="flex box flex-col gap-4 mt-8" *ngIf="isSent">
-    <h3 class="text-2xl font-semibold">Успішно надіслано!</h3>
-    <p class="text-lg text-">
-      Дякуємо за вашу заявку! Скоро ми з вами зв'яжемось.
-      <br />
-      <br />
-      Запрошую долучатись до ком'юніті власників модульних будинків!
+  <div class="flex box flex-col items-center gap-4 mt-8" *ngIf="isSent">
+    <h3 class="text-2xl font-semibold">
+      {{ "CONTACT_FORM.SENT.TITLE" | translate }}
+    </h3>
+    <p class="text-lg">
+      {{ "CONTACT_FORM.SENT.TEXT" | translate }}
+    </p>
+    <p class="text-lg">
+      {{ "CONTACT_FORM.SENT.TEXT_2" | translate }}
     </p>
     <div class="flex gap-4">
-      <!-- <a
-        href="https://t.me/victorie_honch"
-        target="_blank"
-        class="text-blue-500 hover:underline"
-        >Telegram</a
-      > -->
-      todo add comunity
+      <!-- todo daa fb link -->
+      <app-call-to-action  [title]=" 'CONTACT_FORM.SENT.FB_LINK' | translate " link="#" />
 
-      <!-- todo add comunity -->
     </div>
+
   </div>
 </div>
