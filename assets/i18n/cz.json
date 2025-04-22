@@ -1,0 +1,258 @@
+{
+  "HOME": {
+    "HERO": {
+      "TITLE": {
+        "S": "Malý dům, velký zisk!",
+        "Z": "",
+        "D": ""
+      },
+      "STATS": {
+        "SETUP": "Instalace",
+        "DAYS": "1 den",
+        "PAYS_OFF": "Návratnost",
+        "YEARS": "2–3 roky",
+        "PROFIT": "Zisk Kč/den",
+        "PROFIT_AMOUNT": "až 4500"
+      },
+      "CTA": {
+        "TITLE": "Zjistit cenu",
+        "TEXT": "a spočítat si vlastní zisk"
+      }
+    },
+    "SOLUTION": {
+      "TITLE": {
+        "0": "Proč je to lepší než",
+        "1": "tradiční výstavba?"
+      },
+      "PROBLEM": {
+        "TITLE": "Problémy",
+        "TITLE_2": "tradičního stavění"
+      },
+      "PROBLEMS": {
+        "SLOW_TITLE": "Pomalé:",
+        "SLOW_TEXT": "6–12 měsíců výstavby",
+        "BUREAUCRACY_TITLE": "Byrokracie",
+        "BUREAUCRACY_TEXT": "Zdlouhavé a komplikované povolovací procesy",
+        "EXPENSIVE_TITLE": "Drahé",
+        "EXPENSIVE_TEXT": "Vysoké náklady a riziko přeplatků"
+      },
+      "SOLUTION_TITLE_LINE_1": "Naše řešení:",
+      "SOLUTION_TITLE_LINE_2": "Mini dům",
+      "ADVANTAGES": {
+        "FAST_SETUP_TITLE": "Rychlá instalace:",
+        "FAST_SETUP_TEXT": "Instalace a připojení do 1 dne",
+        "NO_PERMITS_TITLE": "Bez složitého povolování:",
+        "NO_PERMITS_TEXT": "Dokumentace je součástí dodávky",
+        "LOW_COST_TITLE": "Nízké náklady:",
+        "LOW_COST_TEXT": "O 35 % nižší náklady na instalaci a provoz"
+      },
+      "CTA": {
+        "TITLE": "Ověřit",
+        "TEXT": "zda je dům vhodný pro váš pozemek"
+      }
+    },
+    "HOW": {
+      "TITLE": "Jak to",
+      "TITLE_SPAN": "funguje",
+      "STEPS": {
+        "0": {
+          "ALT": "Odešlete poptávku",
+          "TEXT": "Pošlete nám poptávku – ozveme se vám a poradíme"
+        },
+        "1": {
+          "ALT": "Výběr modelu",
+          "TEXT": "Vyberete si model domu a doplňky"
+        },
+        "2": {
+          "ALT": "Doprava a instalace",
+          "TEXT": "Doprava a instalace během 3–5 dnů"
+        },
+        "3": {
+          "ALT": "Hotový dům",
+          "TEXT": "Dům je připraven k užívání a výdělku!"
+        }
+      },
+      "MORE_PHOTOS": "Možnost přesunu domu kdykoli a kamkoli!",
+      "CTA": {
+        "TITLE": "Zjistit více",
+        "TEXT": "o instalaci modulárních domů"
+      }
+    },
+    "PROFIT": {
+      "TITLE_PART1": "Kolik si můžete",
+      "TITLE_PART2": "vydělat?",
+      "RENT_PRICE": "Průměrná cena pronájmu:",
+      "RENT_PRICE_AMOUNT": "3000–4500 Kč / den",
+      "OCCUPANCY": "Obsazenost 70 % =",
+      "OCCUPANCY_AMOUNT": "~79 000 Kč / měsíc",
+      "PAYBACK": "Návratnost od",
+      "PAYBACK_TIME": "2 let",
+
+      "CALC": {
+        "LABEL_RENT": "Cena pronájmu (Kč / den):",
+        "PLACEHOLDER_RENT": "3750",
+        "LABEL_OCCUPANCY": "Obsazenost (%):",
+        "PLACEHOLDER_OCCUPANCY": "70",
+        "BUTTON": "Spočítat",
+        "RESULT_LABEL": "Očekávaný zisk:",
+        "RESULT_UNIT": "Kč / měsíc"
+      }
+    },
+    "GALLERY": {
+      "TITLE": "Galerie",
+      "SUBTITLE": "Fotky a videa",
+      "INTERIOR": "Interiér",
+      "VIDEO_TITLE": "Videoprohlídka domu",
+      "VIDEO_ALT": "Videoprohlídka domu",
+      "VIEW_360_TITLE": "360° prohlídka",
+      "VIEW_360_ALT": "360 prohlídka",
+      "CTA_TITLE": "Zarezervovat si",
+      "CTA_TEXT": "online prezentaci"
+    },
+    "REVIEWS": {
+      "TITLE_HIGHLIGHT": "Hodnocení a příběhy",
+      "TITLE": "našich klientů",
+      "REVIEWER_PHOTO_ALT": "Fotka klienta"
+    },
+    "BONUSES": {
+      "TITLE": "Další",
+      "TITLE_HIGHLIGHT": "bonusy",
+      "PDF_1": "Při objednání našeho modulárního domu obdržíte jako dárek",
+      "PDF_2": "pdf návod",
+      "PDF_3": " — krok za krokem plán, jak začít vydělávat ihned po instalaci!",
+      "COMMUNITY_1": "Kromě toho se stanete členem",
+      "COMMUNITY_2": "uzavřené komunity",
+      "COMMUNITY_3": "vlastníků modulárních domů pro výměnu nápadů a zkušeností.",
+      "CTA_TITLE": "Získat PDF",
+      "CTA_TEXT": "a stát se členem uzavřené komunity"
+    },
+    "TRUST": {
+      "TITLE": "Proč",
+      "TITLE_HIGHLIGHT": "nám můžete důvěřovat?",
+      "LICENSE_ALT": "Licence",
+      "GUARANTEE_ALT": "Záruka",
+      "EXPERIENCE_ALT": "Zkušenosti",
+      "LICENSE_TEXT_1": "Domy splňují normy",
+      "LICENSE_TEXT_2": "ČSN a standardy EN.",
+      "LICENSE_TEXT_3": "Certifikát energetické účinnosti a ekologičnosti.",
+      "GUARANTEE_TEXT_1": "Poskytujeme",
+      "GUARANTEE_TEXT_2": "10 let záruky",
+      "GUARANTEE_TEXT_3": "na všechny domy",
+      "EXPERIENCE_TEXT_1": "Instalovali jsme více než",
+      "EXPERIENCE_TEXT_2": "220",
+      "EXPERIENCE_TEXT_3": "domů",
+      "CTA_TITLE": "Objednat",
+      "CTA_TEXT": "online prezentaci"
+    },
+    "FAQ": {
+      "TITLE_1": "Časté",
+      "TITLE_2": "dotazy",
+      "Q1": "Je potřeba povolení k instalaci?",
+      "A1": "Většina případů nevyžaduje povolení, ale záleží na regionu a místních předpisech.",
+      "Q2": "Jaké komunikace jsou potřebné pro dům?",
+      "A2": "Je nutné připojení k elektřině, vodovodu a kanalizaci. Možné je také využití autonomních systémů.",
+      "Q3": "Jak rychle se dům zaplatí?",
+      "A3": "Průměrná doba návratnosti závisí na ceně pronájmu, ale obvykle se pohybuje mezi 2–5 lety.",
+      "Q4": "Jak probíhá doprava a instalace?",
+      "A4": "Dům je dodán na speciálním podvozku, instalace trvá od 1 do 3 dnů.",
+      "CTA_TITLE": "Konzultovat",
+      "CTA_DIVIDER": "nebo",
+      "CTA_2_TITLE": "Zeptat se na WhatsApp",
+      "CTA_2_TEXT": "Rádi odpovíme na vaše dotazy."
+    },
+    "FINAL_CTA": {
+      "TITLE_LINE_1": "Chcete",
+      "TITLE_LINE_2": "začít vydělávat",
+      "TITLE_LINE_3": "na pronájmu již v této sezóně?",
+      "CTA_MSG": "Zanechte nám žádost – rádi vám pomůžeme udělat první krok!"
+    }
+  },
+  "REVIEWS": {
+    "NAME_1": "Milan K.",
+    "TEXT_1": "Mám pozemek u přehrady Graholusky. Objednal jsem Křehký dům a už za týden stál připravený k přijetí hostů. Pronajímám ho přes Airbnb — první léto jsem získal zpět 40 % investice.",
+
+    "NAME_2": "Lucie a Pavel M.",
+    "TEXT_2": "Nainstalovali jsme dva moduly jako útulné mini-kanceláře. Přijíždí sem pracovat freelanceři. Líbí se jim ticho a krásný výhled.",
+
+    "NAME_3": "Tereza V.",
+    "TEXT_3": "Koupila jsem modul rozdělený na kavárnu a malé bydlení. Umístila jsem ho u cyklostezky. Lidé se zastavují na kávu, a já bydlím poblíž.",
+
+    "NAME_4": "Jakub L.",
+    "TEXT_4": "Nedaleko řeky jsem nainstaloval modul pro turisty. Rybolovci a cestovatelé si ho rezervují předem. Místo obyčejného pozemku mám nyní ziskový mini-biznis.",
+
+    "NAME_5": "Andrea S.",
+    "TEXT_5": "Snížila jsem o prostoru pro lekce s dětmi. Umístili jsme modul na zahradu, zařídila jsem si studio, kde pořádám kreativní lekce.",
+
+    "NAME_6": "Martin D.",
+    "TEXT_6": "Nainstaloval jsem Křehký dům na vlastní zemi — teď moji zaměstnanci bydlí poblíž. Mezitím ho pronajímám dalším.",
+
+    "NAME_7": "Iveta R.",
+    "TEXT_7": "Na prázdném lesním pozemku jsem nainstalovala modul s krbem. Pronajímám ho jako 'retrit dům' — ideální pro ty, kteří hledají klid.",
+
+    "NAME_8": "Josef N.",
+    "TEXT_8": "Spojil jsem dva moduly a vytvořil mini-hostel pro lyžaře. Je to levnější než stavba a nevyžaduje žádnou administrativu.",
+
+    "NAME_9": "Petra T.",
+    "TEXT_9": "Jsem instruktorka jógy. Na svém pozemku jsem vytvořila prostorný modul — studio se světlem a panoramatickým oknem.",
+
+    "NAME_10": "Filip Š.",
+    "TEXT_10": "Jsem psychoterapeut. Objednal jsem Křehkou kancelář a umístil ji na dvorek. Teď přijímám klienty bez nájmu."
+  },
+  "CONTACT_FORM": {
+    "TITLE": "Objednat hovor",
+    "NAME": "Jméno",
+    "PHONE": "Telefonní číslo",
+    "MESSAGE": "Komentář",
+    "SUBMIT": "Odeslat",
+    "PRIVACY_NOTICE": "Kliknutím na tlačítko níže automaticky souhlasíte se zpracováním vašich údajů.",
+    "ERRORS": {
+      "NAME_REQUIRED": "Jméno je povinné.",
+      "NAME_MINLENGTH": "Jméno musí obsahovat alespoň 2 znaky.",
+      "PHONE_REQUIRED": "Telefonní číslo je povinné."
+    },
+    "SENT": {
+      "TITLE": "Úspěšně odesláno!",
+      "TEXT": "Děkujeme za vaši žádost! Brzy vás budeme kontaktovat.",
+      "TEXT_2": "Zveme vás k připojení se k našemu komunitnímu fóru vlastníků modulových domů!",
+      "FB_LINK": "Náš Facebook"
+    }
+  },
+  "FOOTER": {
+    "ABOUT": {
+      "TITLE": "O nás",
+      "DESCRIPTION": "Naše společnost se specializuje na prodej a instalaci modulových domů. Nabízíme rychlé, cenově dostupné a efektivní řešení pro vytvoření vlastního bydlení nebo pronájmu."
+    },
+    "CONTACTS": {
+      "TITLE": "Kontakty",
+      "PHONE": "Telefon",
+      "EMAIL": "Email",
+      "ADDRESS": "Adresa"
+    },
+    "LINKS": {
+      "TITLE": "Odkazy",
+      "ABOUT": "O nás",
+      "FAQ": "Časté dotazy",
+      "TERMS": "Podmínky použití",
+      "PRIVACY": "Zásady ochrany osobních údajů",
+      "CALCULATOR": "Kalkulátor ziskovosti"
+    },
+    "NEWSLETTER": {
+      "TITLE": "Přihlášení k novinkám",
+      "LABEL": "Přihlaste se k odběru našich novinek a speciálních nabídek.",
+      "PLACEHOLDER": "Zadejte svůj e-mail",
+      "BUTTON": "Přihlásit se"
+    },
+    "COPYRIGHT": "Všechna práva vyhrazena."
+  },
+  "MESSAGES": {
+    "MSG_1": "Návratnost už od 2 let!",
+    "MSG_2": "Dům postavíme za jediný den – bez stavebního povolení!",
+    "MSG_3": "Můžete pronajímat hned po instalaci!",
+    "MSG_4": "Ekologický dům o rozloze 15 m² s nezávislým provozem.",
+    "MSG_5": "Ušetřete až 50 % nákladů oproti klasické výstavbě!",
+    "MSG_6": "Pasivní příjem – skvělý způsob, jak zhodnotit svůj pozemek!",
+    "MSG_7": "100% záruka kvality a certifikace podle českých stavebních norem!",
+    "MSG_8": "Minimální náklady na údržbu – úspora až 40 % na energiích!",
+    "MSG_9": "Pronajímejte programátorům, turistům, rybářům, blogerům na detox nebo retreat!"
+  }
+}
