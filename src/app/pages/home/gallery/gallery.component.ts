@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { SwiperComponent } from "../../../shared/components/swiper/swiper.component";
 import { CallToActionComponent } from "../../../shared/components/call-to-action/call-to-action.component";
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-gallery',
-  imports: [SwiperComponent, CallToActionComponent],
+  imports: [SwiperComponent, CallToActionComponent, TranslateModule],
   templateUrl: './gallery.component.html',
   styleUrl: './gallery.component.scss'
 })

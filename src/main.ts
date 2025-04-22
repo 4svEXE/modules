@@ -1,7 +1,7 @@
 /// <reference types="@angular/localize" />
 
 import { bootstrapApplication } from '@angular/platform-browser';
-import { provideHttpClient, withInterceptorsFromDi, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 import { AppComponent } from './app/app.component';
 import { appConfig } from './app/app.config';
 import { TranslateService, TranslateLoader, TranslateStore } from '@ngx-translate/core';
@@ -19,7 +19,6 @@ bootstrapApplication(AppComponent, {
   providers: [
     ...appConfig.providers,
     provideHttpClient(withInterceptorsFromDi()),
-    // { provide: HTTP_INTERCEPTORS, useClass: SecurityInterceptor, multi: true },
 
     // ✅ Реєструємо ngx-translate правильно
     TranslateStore, // ⚠️ Це ВИРІШУЄ помилку `No provider for TranslateStore!`

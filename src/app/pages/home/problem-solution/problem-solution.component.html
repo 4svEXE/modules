@@ -3,7 +3,8 @@
     <!-- Problem and Solution Block -->
     <div class="problem-solution">
       <h2 class="text-3xl font-bold mb-4 text-white">
-        <span>Чому це краще</span> за традиційне будівництво?
+        <span>{{ "HOME.SOLUTION.TITLE.0" | translate }}</span>
+        {{ "HOME.SOLUTION.TITLE.1" | translate }}
       </h2>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
         <!-- Problem Block -->
@@ -11,10 +12,11 @@
           class="problem bg-secondary-color transition-all hover:bg-secondary-hover"
         >
           <h3 class="text-xl font-semibold text-white mb-4">
-            Проблеми  <br /><span>традиційного будівництва</span>
+            {{ "HOME.SOLUTION.PROBLEM.TITLE" | translate }} <br />
+            <span> {{ "HOME.SOLUTION.PROBLEM.TITLE_2" | translate }}</span>
           </h3>
 
-          <img src="./assets/img/building.jpg" alt="">
+          <img src="./assets/img/building.jpg" alt="" />
 
           <div class="space-y-4">
             <!-- Problem Block -->
@@ -43,9 +45,11 @@
                   </g>
                 </svg>
               </div>
-              <div class="flex flex-col items-start">
-                <b>Довго:</b>
-                <p class="text-white">6-12 місяців для будівництва</p>
+              <div class="flex flex-col items-start mb-4">
+                <b>{{ "HOME.SOLUTION.PROBLEMS.SLOW_TITLE" | translate }}</b>
+                <p class="text-white">
+                  {{ "HOME.SOLUTION.PROBLEMS.SLOW_TEXT" | translate }}
+                </p>
               </div>
             </div>
 
@@ -73,9 +77,13 @@
                   </g>
                 </svg>
               </div>
-              <div class="flex flex-col items-start">
-                <b>Б'юроктарія</b>
-                <p class="text-white">Необхідність дозволів на будівництво</p>
+              <div class="flex flex-col items-start mb-4">
+                <b>{{
+                  "HOME.SOLUTION.PROBLEMS.BUREAUCRACY_TITLE" | translate
+                }}</b>
+                <p class="text-white">
+                  {{ "HOME.SOLUTION.PROBLEMS.BUREAUCRACY_TEXT" | translate }}
+                </p>
               </div>
             </div>
 
@@ -114,10 +122,12 @@
                   </g>
                 </svg>
               </div>
-              <div class="flex flex-col items-start">
-                <b>Дорого</b>
+              <div class="flex flex-col items-start mb-4">
+                <b>{{
+                  "HOME.SOLUTION.PROBLEMS.EXPENSIVE_TITLE" | translate
+                }}</b>
                 <p class="text-white">
-                  Високі витрати на будівництво та ризики переплат
+                  {{ "HOME.SOLUTION.PROBLEMS.EXPENSIVE_TEXT" | translate }}
                 </p>
               </div>
             </div>
@@ -129,10 +139,11 @@
           class="solution bg-primary-color transition-all hover:bg-primary-hover"
         >
           <h3 class="text-xl font-semibold text-white mb-4">
-            Наше рішення: <br />
-            <span>Крихітний будинок</span>
+            {{ "HOME.SOLUTION.SOLUTION_TITLE_LINE_1" | translate }} <br />
+            <span>{{ "HOME.SOLUTION.SOLUTION_TITLE_LINE_2" | translate }}</span>
           </h3>
-          <img src="./assets/img/module.webp" alt="">
+
+          <img src="./assets/img/module.webp" alt="" />
           <div class="space-y-4">
             <!-- Solution Block -->
             <div class="solution-item">
@@ -157,9 +168,13 @@
                   </g>
                 </svg>
               </div>
-              <div class="flex flex-col items-start">
-                <b>Швидке встановлення:</b>
-                <p class="text-white">3-5 днів для встановлення</p>
+              <div class="flex flex-col items-start mb-4">
+                <b>{{
+                  "HOME.SOLUTION.ADVANTAGES.FAST_SETUP_TITLE" | translate
+                }}</b>
+                <p class="text-white">
+                  {{ "HOME.SOLUTION.ADVANTAGES.FAST_SETUP_TEXT" | translate }}
+                </p>
               </div>
             </div>
 
@@ -187,9 +202,13 @@
                   </g>
                 </svg>
               </div>
-              <div class="flex flex-col items-start">
-                <b>Без складних дозволів:</b>
-                <p class="text-white">Мінімум документів та дозволів</p>
+              <div class="flex flex-col items-start mb-4">
+                <b>{{
+                  "HOME.SOLUTION.ADVANTAGES.NO_PERMITS_TITLE" | translate
+                }}</b>
+                <p class="text-white">
+                  {{ "HOME.SOLUTION.ADVANTAGES.NO_PERMITS_TEXT" | translate }}
+                </p>
               </div>
             </div>
 
@@ -241,10 +260,12 @@
                   </g>
                 </svg>
               </div>
-              <div class="flex flex-col items-start">
-                <b>Низькі витрати:</b>
+              <div class="flex flex-col items-start mb-4">
+                <b>{{
+                  "HOME.SOLUTION.ADVANTAGES.LOW_COST_TITLE" | translate
+                }}</b>
                 <p class="text-white">
-                  Мінімальні витрати на будівництво та обслуговування
+                  {{ "HOME.SOLUTION.ADVANTAGES.LOW_COST_TEXT" | translate }}
                 </p>
               </div>
             </div>
@@ -252,11 +273,11 @@
         </div>
       </div>
 
-        <app-call-to-action
+      <app-call-to-action
         link="#contact-form"
-        title="Перевірити"
-        text="чи підходить цей будинок для вашої ділянки"
-      />
+        [title]="'HOME.SOLUTION.CTA.TITLE' | translate"
+        [text]="'HOME.SOLUTION.CTA.TEXT' | translate"
+      ></app-call-to-action>
     </div>
   </div>
 </section>

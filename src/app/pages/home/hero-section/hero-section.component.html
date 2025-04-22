@@ -9,7 +9,7 @@
       webkit-playsinline
       disableRemotePlayback
       preload="auto"
-      [attr.poster]="videoLoaded ? './assets/img/01.jpg' : ''"
+      [attr.poster]="videoLoaded ? '' : './assets/img/01.jpg'"
       (loadeddata)="onVideoLoaded()"
     >
       <source src="./assets/videos/hiro.mp4" type="video/mp4" />
@@ -18,32 +18,32 @@
     <div class="container flex flex-col gap-20" style="margin-top: 0">
       <div class="hero-header grid grid-cols-3">
         <div class="flex flex-col items-center justify-center gap-2">
-          <span>Встановлення</span>
-          <p>3-5 днів</p>
+          <span>{{ "HOME.HERO.STATS.SETUP" | translate }}</span>
+          <p>{{ "HOME.HERO.STATS.DAYS" | translate }}</p>
         </div>
         <div class="bordered flex flex-col items-center justify-center gap-2">
-          <span>Окупається</span>
-          <p>2-3 роки</p>
+          <span>{{ "HOME.HERO.STATS.PAYS_OFF" | translate }}</span>
+          <p>{{ "HOME.HERO.STATS.YEARS" | translate }}</p>
         </div>
         <div class="flex flex-col items-center justify-center gap-2">
-          <span>Прибуток</span>
-          <p>від 80$ в день</p>
+          <span>{{ "HOME.HERO.STATS.PROFIT" | translate }}</span>
+          <p>{{ "HOME.HERO.STATS.PROFIT_AMOUNT" | translate }}</p>
         </div>
       </div>
 
       <div class="hero-title flex flex-col">
         <h1>
-          Крихітні будинки <br />
-          з величезною <br />
-          дохідністю.
+          {{ "HOME.HERO.TITLE.S" | translate }} <br />
+          {{ "HOME.HERO.TITLE.Z" | translate }} <br />
+          {{ "HOME.HERO.TITLE.D" | translate }}
         </h1>
         <app-marquee [messages]="messages" />
       </div>
 
       <app-call-to-action
         link="#contact-form"
-        title="Дізнатися вартість"
-        text="та розрахувати свій прибуток"
+        [title]="'HOME.HERO.CTA.TITLE' | translate"
+        [text]="'HOME.HERO.CTA.TEXT' | translate"
       />
     </div>
   </div>

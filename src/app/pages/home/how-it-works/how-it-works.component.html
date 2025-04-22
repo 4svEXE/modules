@@ -1,79 +1,65 @@
 <section class="container dark gap-4">
-  <h2>Як це <span>працює</span></h2>
+  <h2>{{ "HOME.HOW.TITLE" | translate }} <span>{{ "HOME.HOW.TITLE_SPAN" | translate }}</span></h2>
 
   <div class="flex flex-col gap-3">
     <div class="two-cols">
       <figure class="p-2 flex-center flex-col">
-        <img
-          class="step-img"
-          src=".\assets\img\how-it-works\0.jpg"
-          alt="Залишаєте заявку"
-        />
+        <img class="step-img" src="./assets/img/how-it-works/0.jpg" alt="{{ 'HOME.HOW.STEPS.0.ALT' | translate }}" />
         <figcaption>
-          <b>Ви залишаєте заявку – ми зв’язуємось та консультуємо</b>
+          <b>{{ "HOME.HOW.STEPS.0.TEXT" | translate }}</b>
         </figcaption>
       </figure>
     </div>
 
-    <img src=".\assets\img\how-it-works\arr-down.svg" alt="arrow down" />
+    <img src="./assets/img/how-it-works/arr-down.svg" alt="arrow down" />
 
     <div class="two-cols">
       <figure class="p-2 flex-center flex-col">
-        <img
-          class="step-img"
-          src=".\assets\img\how-it-works\3.jpg"
-          alt="Вибір моделі"
-        />
+        <img class="step-img" src="./assets/img/how-it-works/3.jpg" alt="{{ 'HOME.HOW.STEPS.1.ALT' | translate }}" />
         <figcaption>
-          <b> Вибираєте модель будинку та додаткові опції</b>
+          <b>{{ "HOME.HOW.STEPS.1.TEXT" | translate }}</b>
         </figcaption>
       </figure>
     </div>
 
-    <img src=".\assets\img\how-it-works\arr-down.svg" alt="arrow down" />
+    <img src="./assets/img/how-it-works/arr-down.svg" alt="arrow down" />
 
     <div class="two-cols">
       <figure class="p-2 flex-center flex-col">
-        <img
-          class="step-img"
-          src=".\assets\img\how-it-works\2.jpg"
-          alt="Доставка та встановлення"
-        />
-        <figcaption><b>Доставка та встановлення за 3-5 днів</b></figcaption>
+        <img class="step-img" src="./assets/img/how-it-works/2.jpg" alt="{{ 'HOME.HOW.STEPS.2.ALT' | translate }}" />
+        <figcaption>
+          <b>{{ "HOME.HOW.STEPS.2.TEXT" | translate }}</b>
+        </figcaption>
       </figure>
     </div>
 
-    <img src=".\assets\img\how-it-works\arr-down.svg" alt="arrow down" />
+    <img src="./assets/img/how-it-works/arr-down.svg" alt="arrow down" />
 
     <div class="two-cols">
       <figure class="p-2 flex-center flex-col">
-        <img
-          class="step-img"
-          src=".\assets\img\how-it-works\1.jpg"
-          alt="Готовий будинок"
-        />
+        <img class="step-img" src="./assets/img/how-it-works/1.jpg" alt="{{ 'HOME.HOW.STEPS.3.ALT' | translate }}" />
         <figcaption>
-          <b>Будинок готовий до використання та прибутку!</b>
+          <b>{{ "HOME.HOW.STEPS.3.TEXT" | translate }}</b>
         </figcaption>
       </figure>
     </div>
   </div>
-  <img src=".\assets\img\how-it-works\arr-down.svg" alt="arrow down" />
+
+  <img src="./assets/img/how-it-works/arr-down.svg" alt="arrow down" />
 
   <div class="two-cols">
     <figure class="p-2 flex-center flex-col">
       <figcaption>
-        <b>Більше фото!</b>
+        <b>{{ "HOME.HOW.MORE_PHOTOS" | translate }}</b>
       </figcaption>
-
       <app-swiper [slides]="slides" />
     </figure>
   </div>
 
   <app-call-to-action
-  class="mt-10"
+    class="mt-10"
     link="#contact-form"
-    title="Дізнатися більше"
-    text="про встановлення модульних будинків"
+    [title]="'HOME.HOW.CTA.TITLE' | translate"
+    [text]="'HOME.HOW.CTA.TEXT' | translate"
   />
 </section>

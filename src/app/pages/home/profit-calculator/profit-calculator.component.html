@@ -1,42 +1,47 @@
 <section class="profit-section content dark">
   <div class="container">
-    <h2 class="title">Скільки можна <span>заробити?</span></h2>
+    <h2 class="title">
+      {{ 'HOME.PROFIT.TITLE_PART1' | translate }} <span>{{ 'HOME.PROFIT.TITLE_PART2' | translate }}</span>
+    </h2>
+
     <div class="profit-details">
-      <p>Середня вартість оренди: <span>100-150 євро/доба</span></p>
-      <p>Завантаження 70% = <span>~2 500 євро/місяць</span></p>
-      <p>Окупність від <span>2 років</span></p>
+      <p>{{ 'HOME.PROFIT.RENT_PRICE' | translate }} <span>{{ 'HOME.PROFIT.RENT_PRICE_AMOUNT' | translate }}</span></p>
+      <p>{{ 'HOME.PROFIT.OCCUPANCY' | translate }} <span>{{ 'HOME.PROFIT.OCCUPANCY_AMOUNT' | translate }}</span></p>
+      <p>{{ 'HOME.PROFIT.PAYBACK' | translate }} <span>{{ 'HOME.PROFIT.PAYBACK_TIME' | translate }}</span></p>
     </div>
+
     <div class="calculator twxt-white my-20">
       <div class="input-group">
-        <label for="rentPrice">Ціна оренди (євро/доба):</label>
+        <label for="rentPrice">{{ 'HOME.PROFIT.CALC.LABEL_RENT' | translate }}</label>
         <input
           type="number"
           id="rentPrice"
           [(ngModel)]="rentPrice"
-          placeholder="100"
+          [placeholder]="'HOME.PROFIT.CALC.PLACEHOLDER_RENT' | translate"
         />
         <span class="bar"></span>
       </div>
 
       <div class="input-group">
-        <label for="occupancy">Завантаженість (%):</label>
+        <label for="occupancy">{{ 'HOME.PROFIT.CALC.LABEL_OCCUPANCY' | translate }}</label>
         <input
           type="number"
           id="occupancy"
           [(ngModel)]="occupancy"
-          placeholder="3"
+          [placeholder]="'HOME.PROFIT.CALC.PLACEHOLDER_OCCUPANCY' | translate"
         />
         <span class="bar"></span>
       </div>
 
       <button class="button-primary mt-2" (click)="calculateProfit()">
-        Розрахувати
+        {{ 'HOME.PROFIT.CALC.BUTTON' | translate }}
       </button>
     </div>
+
     <div class="result">
-      <span>Очікуваний прибуток: </span>
+      <span>{{ 'HOME.PROFIT.CALC.RESULT_LABEL' | translate }}</span>
       <p>
-        <b>{{ result }}</b> євро/місяць
+        <b>{{ result }}</b> {{ 'HOME.PROFIT.CALC.RESULT_UNIT' | translate }}
       </p>
     </div>
   </div>

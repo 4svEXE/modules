@@ -6,6 +6,8 @@ export interface IReview {
   rating?: 1 | 2 | 3 | 4 | 5
 }
 
+
+// todo перекласти чеською або зробити трансляцію
 export const reviewsJSON: IReview[] = [
   {
     id: '1',

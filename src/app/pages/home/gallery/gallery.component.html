@@ -1,14 +1,14 @@
-<section class="container content_ dark gap-4">
+<section class="dark gap-4">
   <h2>
-    Галерея <br />
-    <span>Фото та відео</span>
+    {{ 'HOME.GALLERY.TITLE' | translate }} <br />
+    <span>{{ 'HOME.GALLERY.SUBTITLE' | translate }}</span>
   </h2>
 
-  <div class="flex flex-col gap-3">
+  <div class="gallery flex flex-col gap-3">
     <div class="two-cols">
-      <figure class="p-2 flex-center flex-col">
-        <figcaption>
-          <b>Інтер'єр</b>
+      <figure class="flex">
+        <figcaption class="flex flex-col gap-2">
+          <b>{{ 'HOME.GALLERY.INTERIOR' | translate }}</b>
 
           <app-swiper [slides]="slides" />
         </figcaption>
@@ -18,38 +18,39 @@
     <div class="two-cols">
       <figure class="p-2 flex-center flex-col">
         <figcaption>
-          <b>Відеоогляд будинку</b>
+          <b>{{ 'HOME.GALLERY.VIDEO_TITLE' | translate }}</b>
         </figcaption>
 
         <video
-          class="background-video loaded"
+          class="background-video loaded w-full"
           [muted]="true"
           playsinline
           webkit-playsinline
           disableRemotePlayback
           controls
-          alt="Відеоогляд будинку"
-          class="w-full "
+          [attr.alt]="'HOME.GALLERY.VIDEO_ALT' | translate"
         >
           <source src="./assets/videos/video_creative.mp4" type="video/mp4" />
         </video>
       </figure>
     </div>
 
-    <!-- <div class="two-cols">
+    <!--
+    <div class="two-cols">
       <figure class="p-2 flex-center flex-col">
         <figcaption>
-          <b>360° огляд</b>
+          <b>{{ 'HOME.GALLERY.VIEW_360_TITLE' | translate }}</b>
         </figcaption>
 
-        <img src="./assets/img/tour/360-view.jpg" alt="360 огляд" />
+        <img src="./assets/img/tour/360-view.jpg" [alt]="'HOME.GALLERY.VIEW_360_ALT' | translate" />
       </figure>
-    </div> -->
+    </div>
+    -->
   </div>
 
   <app-call-to-action
     link="#contact-form"
-    title="Записатися"
-    text="на онлайн-презентацію"
+    [title]="'HOME.GALLERY.CTA_TITLE' | translate"
+    [text]="'HOME.GALLERY.CTA_TEXT' | translate"
   />
 </section>

@@ -2,9 +2,8 @@
 /* Основні стилі для контейнера */
 .carouselContainer {
   width: 100%;
-  max-width: 320px;
+  max-width: 360px;
   margin: 0 auto;
-  padding: 20px;
   box-sizing: border-box;
   position: relative;
   background-color: unset;
@@ -13,6 +12,7 @@
 /* Стилі для самого слайдера */
 .swiperContainer {
   width: 100%;
+
   height: 400px; /* Можеш налаштувати висоту під свій дизайн */
   border-radius: 10px;
   overflow: hidden;
@@ -24,6 +24,8 @@
 /* Стилі для слайдів */
 .tranding-slide {
   width: 100%;
+  max-width: 360px;
+
   display: flex;
   justify-content: center;
   align-items: center;

@@ -1,16 +1,17 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-profit-calculator',
-  imports: [FormsModule],
+  imports: [FormsModule, TranslateModule],
   templateUrl: './profit-calculator.component.html',
   styleUrl: './profit-calculator.component.scss'
 })
 export class ProfitCalculatorComponent {
-  rentPrice: number = 100;
+  rentPrice: number = 3750;
   occupancy: number = 70;
-  result: string = '0';
+  result: string = '79000';
 
   calculateProfit(): void {
     if (!this.rentPrice || !this.occupancy) {
