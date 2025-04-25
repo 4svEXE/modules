@@ -1,61 +1,58 @@
 <footer class="py-10 md:py-16 dark">
-
   <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+    <!-- About -->
+    <div>
+      <h3 class="text-xl font-semibold mb-4">{{ "FOOTER.ABOUT.TITLE" | translate }}</h3>
+      <p class="text-sm">{{ "FOOTER.ABOUT.DESCRIPTION" | translate }}</p>
+    </div>
 
-      <!-- Про нас -->
-      <div>
-          <h3 class="text-xl font-semibold mb-4">Про нас</h3>
-          <p class="text-sm">Наша компанія спеціалізується на продажу та встановленні модульних будинків. Ми пропонуємо швидке, доступне та ефективне рішення для створення власного житла або оренди.</p>
-      </div>
+    <!-- Contacts -->
+    <div>
+      <h3 class="text-xl font-semibold mb-4">{{ "FOOTER.CONTACTS.TITLE" | translate }}</h3>
+      <ul class="space-y-2">
+        <li><strong>{{ "FOOTER.CONTACTS.PHONE" | translate }}:</strong> +{{PHONE}}</li>
+        <li>
+          <strong>{{ "FOOTER.CONTACTS.EMAIL" | translate }}:</strong>
+          <a [href]="'mailto:'+ EMAIL " class="hover:text-blue-300">{{EMAIL}}</a>
+        </li>
+        <li><strong>{{ "FOOTER.CONTACTS.ADDRESS" | translate }}:</strong> {{ADRESS}}</li>
+      </ul>
+    </div>
 
-      <!-- Контакти -->
-      <div>
-          <h3 class="text-xl font-semibold mb-4">Контакти</h3>
-          <ul class="space-y-2">
-              <li><strong>Телефон:</strong> +420 123 456 789</li>
-              <li><strong>Email:</strong> <a href="mailto:info@modularhouse.cz" class="hover:text-blue-300">{{EMAIL}}</a></li>
-              <li><strong>Адреса:</strong> Прага, Чехія</li>
-          </ul>
-      </div>
+    <!-- Links -->
+    <div>
+      <h3 class="text-xl font-semibold mb-4">{{ "FOOTER.LINKS.TITLE" | translate }}</h3>
+      <ul class="space-y-2">
+        <li><a href="#about" class="hover:text-blue-300">{{ "FOOTER.LINKS.ABOUT" | translate }}</a></li>
+        <li><a href="#faq" class="hover:text-blue-300">{{ "FOOTER.LINKS.FAQ" | translate }}</a></li>
+        <li><a href="#terms" class="hover:text-blue-300">{{ "FOOTER.LINKS.TERMS" | translate }}</a></li>
+        <li><a href="#privacy" class="hover:text-blue-300">{{ "FOOTER.LINKS.PRIVACY" | translate }}</a></li>
+        <li><a href="#calculator" class="hover:text-blue-300">{{ "FOOTER.LINKS.CALCULATOR" | translate }}</a></li>
+      </ul>
+    </div>
 
-      <!-- Лінки -->
-      <div>
-          <h3 class="text-xl font-semibold mb-4">Лінки</h3>
-          <ul class="space-y-2">
-              <li><a href="#" class="hover:text-blue-300">Про нас</a></li>
-              <li><a href="#" class="hover:text-blue-300">Часті запитання</a></li>
-              <li><a href="#" class="hover:text-blue-300">Умови використання</a></li>
-              <li><a href="#" class="hover:text-blue-300">Політика конфіденційності</a></li>
-              <li><a href="#" class="hover:text-blue-300">Калькулятор прибутковості</a></li>
-          </ul>
-      </div>
-
-
-
-      <!-- Підписка -->
-      <div>
-          <h3 class="text-xl font-semibold mb-4">Підписка на новини</h3>
-          <form action="#">
-              <label for="email" class="text-sm">Оформіть підписку на наші оновлення та спеціальні пропозиції.</label>
-              <input type="email" id="email" placeholder="Введіть вашу пошту" class="w-full p-2 mt-2 text-black rounded-md" required>
-              <button type="submit" class="mt-4 w-full button-secondary text-white">Підписатися</button>
-          </form>
-      </div>
+    <!-- Newsletter -->
+    <div>
+      <h3 class="text-xl font-semibold mb-4">{{ "FOOTER.NEWSLETTER.TITLE" | translate }}</h3>
+      <form action="#">
+        <label for="email" class="text-sm">{{ "FOOTER.NEWSLETTER.LABEL" | translate }}</label>
+        <input
+          type="email"
+          id="email"
+          placeholder="{{ 'FOOTER.NEWSLETTER.PLACEHOLDER' | translate }}"
+          class="w-full p-2 mt-2 text-black rounded-md"
+          required
+        />
+        <button type="submit" class="mt-4 w-full button-secondary text-white">
+          {{ "FOOTER.NEWSLETTER.BUTTON" | translate }}
+        </button>
+      </form>
+    </div>
   </div>
 
-  <!-- Соціальні мережі -->
-  <!-- <div class="mt-8 text-center">
-      <h3 class="text-xl font-semibold mb-4">Соціальні мережі</h3>
-      <div class="flex justify-center flex-col items-center gap-2">
-          <a href="#" class="text-2xl hover:text-white transition duration-300">Facebook</a>
-          <a href="#" class="text-2xl hover:text-white transition duration-300">Instagram</a>
-          <a href="#" class="text-2xl hover:text-white transition duration-300">YouTube</a>
-          <a href="#" class="text-2xl hover:text-white transition duration-300">LinkedIn</a>
-      </div>
-  </div> -->
-
-  <!-- Підпис на авторські права -->
+  <!-- Copyright -->
   <div class="mt-8 border-t border-gray-700 pt-4 text-center">
-      <p class="text-sm">&copy; 2025 Modular House. Всі права захищені.</p>
+    <app-language-switcher />
+    <p class="text-sm">&copy; 2025 domivka.cz. {{ "FOOTER.COPYRIGHT" | translate }}</p>
   </div>
 </footer>

@@ -21,7 +21,7 @@ export class ContactFormComponent {
   constructor(private fb: FormBuilder, private telegramService: TelegramService) {
     this.contactForm = this.fb.group({
       name: ['', Validators.required],
-      phone: ['', [Validators.required, Validators.pattern('^[0-9]{10}$')]],
+      phone: ['', [Validators.required]],
       message: ['']
     });
   }

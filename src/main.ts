@@ -37,7 +37,7 @@ bootstrapApplication(AppComponent, {
 
     // Отримуємо TranslateService після завантаження застосунку
     const translate = appRef.injector.get(TranslateService);
-    translate.setDefaultLang('en'); // За замовчуванням англійська
-    translate.use('en'); // Використовуємо англійську мову при старті
+    translate.setDefaultLang('cz'); // За замовчуванням англійська
+    translate.use('cz'); // Використовуємо англійську мову при старті
   })
   .catch((err) => console.error(err));
