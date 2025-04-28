@@ -1,0 +1,15 @@
+<div class="cookie-consent" *ngIf="isVisible">
+  <div class="cookie-consent__content">
+    <p>
+      Používáme cookies, abychom Vám umožnili pohodlné prohlížení webu a díky
+      analýze provozu webu neustále zlepšovali jeho funkce, výkon a
+      použitelnost.
+      <a routerLink="/terms-of-privacy">Více informací</a>
+
+    </p>
+    <div class="cookie-consent__actions">
+      <button class="accept-btn" (click)="acceptCookies()">Souhlasím</button>
+    </div>
+    <button class="reject-btn" (click)="rejectCookies()">Nesouhlasím</button>
+  </div>
+</div>

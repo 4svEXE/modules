@@ -9,6 +9,7 @@ import { LanguageService } from './core/services/language.service';
 import { MarqueeComponent } from './shared/components/marquee/marquee.component';
 import { environment } from '../environments/environment';
 import { CommonModule } from '@angular/common';
+import { CookieConsentComponent } from "./core/components/cookie-consent/cookie-consent.component";
 
 @Component({
   selector: 'app-root',
@@ -19,14 +20,20 @@ import { CommonModule } from '@angular/common';
     FooterComponent,
     MobileMenuComponent,
     MarqueeComponent,
-    RouterLink
+    CookieConsentComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
 export class AppComponent implements OnInit {
-  baseHref = environment.baseHref;
-  title = 'modules';
+  WATSAPP = environment.WATSAPP;
+
+  scrollToContact() {
+    const element = document.querySelector('#contact-form');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
 
   constructor(private languageService: LanguageService) { }
 

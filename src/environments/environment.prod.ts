@@ -1,5 +1,6 @@
 export const environment = {
   production: true,
-  baseHref: 'https://4svexe.github.io/ang-19-shop/',
-  telegramChatId: 'your-telegram-chat-id',
+  EMAIL: 'domivka@email.cz',
+  PHONE: '420 608 099 059',
+  ADRESS: 'Jáchymovská 42/19, Bohatice 360 04, 4 Karlovy Vary 4'
 };
