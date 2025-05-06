@@ -1,0 +1,94 @@
+.offer-box {
+  background-color: var(--bg-color);
+  color: var(--text-color-headings-light);
+  font-family: var(--font-family-base);
+  padding: 8px;
+  border-radius: 1rem;
+  max-width: 500px;
+  margin: 4px auto;
+  box-shadow: var(--box-shadow);
+  text-align: center;
+  position: relative;
+
+  h2 {
+    font-size: 2.5rem;
+    font-family: var(--font-family-headings);
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+    // margin-bottom: 0.5rem;
+    color: var(--text-color-headings-light);
+
+    span,
+    b {
+      color: var(--accent-color);
+    }
+  }
+
+  .content-box {
+    background-color: #00000099;
+    z-index: 99999999999;
+
+    &.mini{
+      font-size: 14px !important;
+      padding-bottom: 4px;
+    }
+  }
+
+  .old-price {
+    text-decoration: line-through;
+    opacity: 0.6;
+  }
+
+  .timer {
+    font-weight: bold;
+    font-size: 0.9rem;
+    // margin-bottom: 1.5rem;
+
+    span {
+      color: var(--accent-color);
+    }
+
+    position: absolute;
+    top: -12px;
+    // margin: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    width: max-content;
+
+    padding: 2px;
+    border-radius: 4px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+
+    input {
+      padding: 0.75rem 1rem;
+      border-radius: 0.5rem;
+      border: 1px solid var(--accent-color);
+      font-family: var(--font-family-base);
+      font-size: 1rem;
+    }
+
+    button {
+      background-color: var(--accent-color);
+      color: white;
+      border: none;
+      padding: 0.75rem;
+      border-radius: 0.5rem;
+      font-weight: bold;
+      font-size: 1rem;
+      cursor: pointer;
+
+      &:hover {
+        background-color: var(--accent-hover);
+      }
+    }
+  }
+}

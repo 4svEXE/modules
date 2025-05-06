@@ -1,4 +1,5 @@
-import { Component, AfterViewInit, ElementRef, ViewChildren, QueryList, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { ModalComponent } from './../../core/components/modal/modal.component';
+import { Component, AfterViewInit, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { CommonModule } from '@angular/common';
 import { Navigation, Pagination, EffectCoverflow } from "swiper/modules";
@@ -12,6 +13,9 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { TrustSectionComponent } from './trust-section/trust-section.component';
 import { FAQComponent } from './faq/faq.component';
 import { FinalCTAComponent } from './final-cta/final-cta.component';
+import { ModalService } from '../../core/components/modal/modal.service';
+import { OneTimeOfferComponent } from '../../shared/components/one-time-offer/one-time-offer.component';
+
 
 @Component({
   selector: 'app-home',
@@ -21,6 +25,7 @@ import { FinalCTAComponent } from './final-cta/final-cta.component';
   imports: [
     TranslateModule,
     CommonModule,
+    ModalComponent,
     HeroSectionComponent,
     ProblemSolutionComponent,
     HowItWorksComponent,
@@ -29,7 +34,8 @@ import { FinalCTAComponent } from './final-cta/final-cta.component';
     TrustSectionComponent,
     FAQComponent,
     FinalCTAComponent,
-    ReviewsComponent
+    ReviewsComponent,
+    OneTimeOfferComponent
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
@@ -53,25 +59,18 @@ export class HomeComponent implements AfterViewInit {
     modules: [EffectCoverflow, Pagination, Navigation],
   };
 
+  constructor(private modalService: ModalService) {}
+
   onVideoLoaded() {
     this.videoLoaded = true;
   }
 
-  // scroll
-  @ViewChildren('animatedBlock') blocks!: QueryList<ElementRef>;
-
   ngAfterViewInit() {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry, i) => {
-        if (entry.isIntersecting) {
-          setTimeout(() => {
-            entry.target.classList.add('slide-in-blurred-left');
-          }, 1000 * i);
-        }
-      });
-    }, { threshold: 0.2 });
 
-    this.blocks.forEach(block => observer.observe(block.nativeElement));
+    // Відкрити модалку через 500 мс
+    setTimeout(() => {
+      this.modalService.open();
+    }, 500);
   }
 
 }
