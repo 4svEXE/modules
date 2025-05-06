@@ -70,7 +70,7 @@ export class HomeComponent implements AfterViewInit {
     // Відкрити модалку через 500 мс
     setTimeout(() => {
       this.modalService.open();
-    }, 500);
+    }, 10000); // автостарт модалки - 20c
   }
 
 }

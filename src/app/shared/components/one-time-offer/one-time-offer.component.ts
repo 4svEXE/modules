@@ -42,7 +42,7 @@ export class OneTimeOfferComponent implements OnInit {
     const distance = this.deadline.getTime() - now;
 
     if (distance < 0) {
-      this.timeLeft = 'Акція завершена';
+      this.timeLeft = 'unactive';
       return;
     }
 
