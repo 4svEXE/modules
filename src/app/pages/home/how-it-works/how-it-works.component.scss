@@ -22,3 +22,21 @@ figure {
     border-radius: 4px;
   }
 }
+
+.alert{
+  display: none;
+  &.active{
+    display: block;
+  }
+  p{
+    font-size: 12px;
+    width: 80%;
+    margin: auto;
+  }
+  a{
+    text-decoration: underline;
+    font-size: 14px;
+  }
+  border: 1px solid red;
+  border-radius: 8px;
+}

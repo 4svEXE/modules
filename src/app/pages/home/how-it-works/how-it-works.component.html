@@ -1,10 +1,17 @@
 <section class="container dark gap-4">
-  <h2>{{ "HOME.HOW.TITLE" | translate }} <span>{{ "HOME.HOW.TITLE_SPAN" | translate }}</span></h2>
+  <h2>
+    {{ "HOME.HOW.TITLE" | translate }}
+    <span>{{ "HOME.HOW.TITLE_SPAN" | translate }}</span>
+  </h2>
 
   <div class="flex flex-col gap-3">
     <div class="two-cols">
       <figure class="p-2 flex-center flex-col">
-        <img class="step-img" src="./assets/img/how-it-works/0.jpg" alt="{{ 'HOME.HOW.STEPS.0.ALT' | translate }}" />
+        <img
+          class="step-img"
+          src="./assets/img/how-it-works/0.jpg"
+          alt="{{ 'HOME.HOW.STEPS.0.ALT' | translate }}"
+        />
         <figcaption>
           <b>{{ "HOME.HOW.STEPS.0.TEXT" | translate }}</b>
         </figcaption>
@@ -14,10 +21,20 @@
     <img src="./assets/img/how-it-works/arr-down.svg" alt="arrow down" />
 
     <div class="two-cols">
-      <figure class="p-2 flex-center flex-col">
-        <img class="step-img" src="./assets/img/how-it-works/3.jpg" alt="{{ 'HOME.HOW.STEPS.1.ALT' | translate }}" />
+      <figure class="p-2 flex-center flex-col" (click)="activateAlert()">
+        <img
+          class="step-img"
+          src="./assets/img/how-it-works/3.jpg"
+          alt="{{ 'HOME.HOW.STEPS.1.ALT' | translate }}"
+        />
         <figcaption>
           <b>{{ "HOME.HOW.STEPS.1.TEXT" | translate }}</b>
+          <div class="flex flex-col alert mt-2" [class.active]="isActiveAlert">
+            <p>{{ "HOME.HOW.ALERT_P" | translate }}</p>
+            <a class="link-button" href="https://wa.me/420608099059"
+              >→{{ "HOME.HOW.ALERT_A" | translate }}←</a
+            >
+          </div>
         </figcaption>
       </figure>
     </div>
@@ -26,7 +43,11 @@
 
     <div class="two-cols">
       <figure class="p-2 flex-center flex-col">
-        <img class="step-img" src="./assets/img/how-it-works/2.jpg" alt="{{ 'HOME.HOW.STEPS.2.ALT' | translate }}" />
+        <img
+          class="step-img"
+          src="./assets/img/how-it-works/2.jpg"
+          alt="{{ 'HOME.HOW.STEPS.2.ALT' | translate }}"
+        />
         <figcaption>
           <b>{{ "HOME.HOW.STEPS.2.TEXT" | translate }}</b>
         </figcaption>
@@ -37,7 +58,11 @@
 
     <div class="two-cols">
       <figure class="p-2 flex-center flex-col">
-        <img class="step-img" src="./assets/img/how-it-works/1.jpg" alt="{{ 'HOME.HOW.STEPS.3.ALT' | translate }}" />
+        <img
+          class="step-img"
+          src="./assets/img/how-it-works/1.jpg"
+          alt="{{ 'HOME.HOW.STEPS.3.ALT' | translate }}"
+        />
         <figcaption>
           <b>{{ "HOME.HOW.STEPS.3.TEXT" | translate }}</b>
         </figcaption>

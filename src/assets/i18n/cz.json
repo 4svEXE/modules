@@ -76,7 +76,9 @@
       "CTA": {
         "TITLE": "Zjistit více",
         "TEXT": "o instalaci modulárních domů"
-      }
+      },
+      "ALERT_P": "Dostupné modely a jejich charakteristiky si můžete ověřit u manažera.",
+      "ALERT_A": "Ověřit přes WhatsApp"
     },
     "PROFIT": {
       "TITLE_PART1": "Kolik si můžete",

@@ -10,7 +10,12 @@ import { TranslateModule } from '@ngx-translate/core';
   styleUrl: './how-it-works.component.scss'
 })
 export class HowItWorksComponent {
+  isActiveAlert = false
   slides = [
     './assets/img/gallery/1.jpg',
   ]
+
+  activateAlert(){
+    this.isActiveAlert = true
+  }
 }

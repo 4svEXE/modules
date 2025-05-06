@@ -66,13 +66,11 @@ export class HomeComponent implements AfterViewInit {
   }
 
   ngAfterViewInit() {
-
     // Відкрити модалку через 500 мс
     setTimeout(() => {
       this.modalService.open();
-    }, 10000); // автостарт модалки - 20c
+    }, 16000); // автостарт модалки - 20c
   }
-
 }
 
 

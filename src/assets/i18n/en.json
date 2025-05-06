@@ -76,7 +76,9 @@
       "CTA": {
         "TITLE": "Дізнатися більше",
         "TEXT": "про встановлення модульних будинків"
-      }
+      },
+      "ALERT_P": "You can check the available models and their specifications with the manager.",
+      "ALERT_A": "Check via WhatsApp"
     },
     "PROFIT": {
       "TITLE_PART1": "Скільки можна",
