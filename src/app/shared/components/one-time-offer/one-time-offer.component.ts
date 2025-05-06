@@ -1,9 +1,10 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, NgForm } from '@angular/forms';
 import { TranslateModule } from '@ngx-translate/core';
 import { SwiperComponent } from '../swiper/swiper.component';
 import { MarqueeComponent } from "../marquee/marquee.component";
+import { TelegramService } from '../../services/telegram.service';
 
 @Component({
   selector: 'app-one-time-offer',
@@ -14,6 +15,9 @@ import { MarqueeComponent } from "../marquee/marquee.component";
 export class OneTimeOfferComponent implements OnInit {
   deadline = new Date('2025-05-31T23:59:59');
   timeLeft = '';
+  loading = false;
+  isSent = false;
+  message = '';
 
   slides = [
     './assets/img/gallery/1.jpg',
@@ -30,7 +34,9 @@ export class OneTimeOfferComponent implements OnInit {
     './assets/img/gallery/interior/8.webp',
     './assets/img/gallery/interior/9.webp',
     './assets/img/gallery/interior/10.webp',
-  ]
+  ];
+
+  constructor(private telegramService: TelegramService) {}
 
   ngOnInit(): void {
     this.updateTimeLeft();
@@ -54,11 +60,28 @@ export class OneTimeOfferComponent implements OnInit {
     this.timeLeft = `${days}d ${hours}h ${minutes}m ${seconds}s`;
   }
 
-  submitForm(form: any): void {
+  submitForm(form: NgForm): void {
     if (form.valid) {
-      const { name, phone } = form.value;
-      console.log('Форма надіслана:', { name, phone });
-      form.reset();
+      this.loading = true;
+
+      const { phone } = form.value;
+      console.log('Форма надіслана:', { phone });
+
+      const msg = `З попапа зі знижкою:\n📞: ${phone}`;
+
+      this.telegramService.sendOrderNotification(msg).subscribe({
+        next: () => {
+          this.message = '✅ OK!';
+          form.reset();
+        },
+        error: () => {
+          this.message = '❌ Error.';
+        },
+        complete: () => {
+          this.loading = false;
+          this.isSent = true;
+        }
+      });
     }
   }
 }

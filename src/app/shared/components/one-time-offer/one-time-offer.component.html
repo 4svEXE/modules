@@ -1,34 +1,40 @@
 <section class="offer-box">
   <app-marquee />
 
- <div class="timer content-box">
-   ⏰ {{ "ONETIME.timer" | translate }}: <span>{{ timeLeft }}</span>
- </div>
+  <div class="timer content-box">
+    ⏰ {{ "ONETIME.timer" | translate }}: <span>{{ timeLeft }}</span>
+  </div>
 
- <app-swiper [slides]="slides" style="height: 320px; display: block" />
+  <app-swiper [slides]="slides" style="height: 320px; display: block" />
 
- <div class="flex flex-col gap-2_ z-50">
-   <p class="dark z-10 content-box">
-     <strong class="flex flex-col">
-       <span class="old-price"> 861 325 Kč </span>
-       <span>715 900 Kč</span>
-     </strong>
-   </p>
-   <p class="dark z-10 content-box mb-4 mini">
-    {{ "ONETIME.discount_1" | translate }}
-    <b>–17%</b>
-    {{ "ONETIME.discount_2" | translate }}!
-   </p>
+  <div class="flex flex-col gap-2_ z-50">
+    <p class="dark z-10 content-box">
+      <strong class="flex flex-col">
+        <span class="old-price">861 325 Kč</span>
+        <span>715 900 Kč</span>
+      </strong>
+    </p>
+    <p class="dark z-10 content-box mb-4 mini">
+      {{ "ONETIME.discount_1" | translate }}
+      <b>–17%</b>
+      {{ "ONETIME.discount_2" | translate }}!
+    </p>
 
-   <form #offerForm="ngForm" (ngSubmit)="submitForm(offerForm)">
-     <input
-       type="tel"
-       name="phone"
-       [placeholder]="'ONETIME.CTA_plchldr' | translate"
-       required
-       ngModel
-     />
-     <button type="submit"> {{ "ONETIME.CTA" | translate }}</button>
-   </form>
- </div>
+    <form #offerForm="ngForm" (ngSubmit)="submitForm(offerForm)" *ngIf="!isSent">
+      <input
+        type="tel"
+        name="phone"
+        [placeholder]="'ONETIME.CTA_plchldr' | translate"
+        required
+        ngModel
+      />
+      <button type="submit">
+        {{ loading ? '...' : ('ONETIME.CTA' | translate) }}
+      </button>
+    </form>
+
+    <div class="sent" *ngIf="isSent">
+      {{ message }}
+    </div>
+  </div>
 </section>
