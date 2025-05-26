@@ -12,6 +12,24 @@
   background-color: unset;
 }
 
+.review-swiper::part(button-next) {
+  right: var(--swiper-navigation-sides-offset, 17px);
+  left: auto;
+}
+.review-swiper::part(button-prev) {
+  left: var(--swiper-navigation-sides-offset, 17px);
+  right: auto;
+}
+.review-swiper::part(button-next),
+.review-swiper::part(button-prev) {
+  color: #fefefe;
+  background-color: rgba(37, 51, 29, 0.458);
+  border-radius: 100%;
+  padding: 10px;
+  height: 20px;
+  width: 20px;
+}
+
 /* Стилі для самого слайдера */
 .swiperContainer {
   padding: 2px;
@@ -21,8 +39,6 @@
   background-color: unset;
   position: relative;
 }
-
-
 
 .review-card {
   margin: auto;
@@ -35,11 +51,11 @@
   border-radius: 8px;
   background: var(--primary-color);
 
-  strong{
+  strong {
     display: contents;
   }
 
-  &.dark{
+  &.dark {
     background: #ffffff00;
   }
 }

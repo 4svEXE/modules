@@ -1,12 +1,12 @@
-<section class="container">
+<section class="container my-0">
   <h2>
-    <span>{{ 'HOME.REVIEWS.TITLE_HIGHLIGHT' | translate }}</span>
-    {{ 'HOME.REVIEWS.TITLE' | translate }}
+    <span>{{ "HOME.REVIEWS.TITLE_HIGHLIGHT" | translate }}</span>
+    {{ "HOME.REVIEWS.TITLE" | translate }}
   </h2>
 
   <div class="carouselContainer">
     <swiper-container
-      class="swiperContainer"
+      class="swiperContainer review-swiper"
       [effect]="swiperConfig.effect"
       [grabCursor]="swiperConfig.grabCursor"
       [centeredSlides]="swiperConfig.centeredSlides"
@@ -35,22 +35,21 @@
     </swiper-container>
   </div>
 
-
   <h2 class="mt-10">
-    {{ 'HOME.BONUSES.TITLE' | translate }}
-    <span>{{ 'HOME.BONUSES.TITLE_HIGHLIGHT' | translate }}</span>
+    {{ "HOME.BONUSES.TITLE" | translate }}
+    <span>{{ "HOME.BONUSES.TITLE_HIGHLIGHT" | translate }}</span>
   </h2>
 
   <div class="flex flex-col gap-4 my-4">
     <p class="review-card dark p-2 my-2 text-white">
-      {{ 'HOME.BONUSES.PDF_1' | translate }}
-      <strong>{{ 'HOME.BONUSES.PDF_2' | translate }}</strong>
-      {{ 'HOME.BONUSES.PDF_3' | translate }}
+      {{ "HOME.BONUSES.PDF_1" | translate }}
+      <strong>{{ "HOME.BONUSES.PDF_2" | translate }}</strong>
+      {{ "HOME.BONUSES.PDF_3" | translate }}
     </p>
     <p class="review-card dark p-2 my-2 text-white">
-      {{ 'HOME.BONUSES.COMMUNITY_1' | translate }}
-      <strong> {{ 'HOME.BONUSES.COMMUNITY_2' | translate }}</strong>
-      {{ 'HOME.BONUSES.COMMUNITY_3' | translate }}
+      {{ "HOME.BONUSES.COMMUNITY_1" | translate }}
+      <strong> {{ "HOME.BONUSES.COMMUNITY_2" | translate }}</strong>
+      {{ "HOME.BONUSES.COMMUNITY_3" | translate }}
     </p>
   </div>
 
