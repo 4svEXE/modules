@@ -51,7 +51,7 @@
 
     span {
       color: #fff;
-      opacity: .7;
+      opacity: 0.7;
       font-size: 14px;
     }
 
@@ -62,7 +62,7 @@
 
       &span {
         color: #fff;
-        opacity: .7;
+        opacity: 0.7;
         font-size: 14px;
       }
     }
@@ -112,8 +112,6 @@
     }
   }
 
-
-
   .hero_decoration_palm {
     position: absolute;
     bottom: -20px;
@@ -130,7 +128,7 @@
     z-index: 30;
   }
 
-  .sand_gradient{
+  .sand_gradient {
     position: absolute;
     bottom: 0px;
     width: 100%;

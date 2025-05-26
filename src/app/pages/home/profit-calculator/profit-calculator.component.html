@@ -1,18 +1,30 @@
-<section class="profit-section content dark">
+<section class="profit-section content dark py-0">
   <div class="container">
     <h2 class="title">
-      {{ 'HOME.PROFIT.TITLE_PART1' | translate }} <span>{{ 'HOME.PROFIT.TITLE_PART2' | translate }}</span>
+      {{ "HOME.PROFIT.TITLE_PART1" | translate }}
+      <span>{{ "HOME.PROFIT.TITLE_PART2" | translate }}</span>
     </h2>
 
     <div class="profit-details">
-      <p>{{ 'HOME.PROFIT.RENT_PRICE' | translate }} <span>{{ 'HOME.PROFIT.RENT_PRICE_AMOUNT' | translate }}</span></p>
-      <p>{{ 'HOME.PROFIT.OCCUPANCY' | translate }} <span>{{ 'HOME.PROFIT.OCCUPANCY_AMOUNT' | translate }}</span></p>
-      <p>{{ 'HOME.PROFIT.PAYBACK' | translate }} <span>{{ 'HOME.PROFIT.PAYBACK_TIME' | translate }}</span></p>
+      <p>
+        {{ "HOME.PROFIT.RENT_PRICE" | translate }}
+        <span>{{ "HOME.PROFIT.RENT_PRICE_AMOUNT" | translate }}</span>
+      </p>
+      <p>
+        {{ "HOME.PROFIT.OCCUPANCY" | translate }}
+        <span>{{ "HOME.PROFIT.OCCUPANCY_AMOUNT" | translate }}</span>
+      </p>
+      <p>
+        {{ "HOME.PROFIT.PAYBACK" | translate }}
+        <span>{{ "HOME.PROFIT.PAYBACK_TIME" | translate }}</span>
+      </p>
     </div>
 
     <div class="calculator twxt-white my-20">
       <div class="input-group">
-        <label for="rentPrice">{{ 'HOME.PROFIT.CALC.LABEL_RENT' | translate }}</label>
+        <label for="rentPrice">{{
+          "HOME.PROFIT.CALC.LABEL_RENT" | translate
+        }}</label>
         <input
           type="number"
           id="rentPrice"
@@ -23,7 +35,9 @@
       </div>
 
       <div class="input-group">
-        <label for="occupancy">{{ 'HOME.PROFIT.CALC.LABEL_OCCUPANCY' | translate }}</label>
+        <label for="occupancy">{{
+          "HOME.PROFIT.CALC.LABEL_OCCUPANCY" | translate
+        }}</label>
         <input
           type="number"
           id="occupancy"
@@ -34,14 +48,14 @@
       </div>
 
       <button class="button-primary mt-2" (click)="calculateProfit()">
-        {{ 'HOME.PROFIT.CALC.BUTTON' | translate }}
+        {{ "HOME.PROFIT.CALC.BUTTON" | translate }}
       </button>
     </div>
 
     <div class="result">
-      <span>{{ 'HOME.PROFIT.CALC.RESULT_LABEL' | translate }}</span>
+      <span>{{ "HOME.PROFIT.CALC.RESULT_LABEL" | translate }}</span>
       <p>
-        <b>{{ result }}</b> {{ 'HOME.PROFIT.CALC.RESULT_UNIT' | translate }}
+        <b>{{ result }}</b> {{ "HOME.PROFIT.CALC.RESULT_UNIT" | translate }}
       </p>
     </div>
   </div>
