@@ -1,5 +1,23 @@
 <div class="language-switcher">
-  <button (click)="changeLanguage('en')">English</button>
-  <span> / </span>
-  <button (click)="changeLanguage('cz')">Czech</button>
+  <button
+    (click)="changeLanguage('en')"
+    [ngClass]="{
+      'underline font-bold': selectedLang === 'en',
+      'opacity-60': selectedLang !== 'en'
+    }"
+    class="rounded-md px-2 py-1 bg-[#1a1a1a]"
+  >
+    UK
+  </button>
+  <span> | </span>
+  <button
+    (click)="changeLanguage('cz')"
+    [ngClass]="{
+      'underline font-bold': selectedLang === 'cz',
+      'opacity-60': selectedLang !== 'cz'
+    }"
+    class="rounded-md px-2 py-1 bg-[#1a1a1a]"
+  >
+    CZ
+  </button>
 </div>

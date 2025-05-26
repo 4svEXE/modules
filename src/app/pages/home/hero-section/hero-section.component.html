@@ -1,5 +1,12 @@
 <section>
   <div class="hero dark">
+    <div
+      class="relative z-10 text-white flex items-center justify-end px-5 py-3"
+    >
+      <div class="rounded-lg flex items-center gap-1">
+        <app-language-switcher></app-language-switcher>
+      </div>
+    </div>
     <video
       class="background-video loaded"
       [muted]="true"
@@ -32,7 +39,7 @@
       </div>
 
       <div class="hero-title flex flex-col">
-        <h1>
+        <h1 class="text-center">
           {{ "HOME.HERO.TITLE.S" | translate }} <br />
           {{ "HOME.HERO.TITLE.Z" | translate }} <br />
           {{ "HOME.HERO.TITLE.D" | translate }}
