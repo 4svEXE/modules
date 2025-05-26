@@ -4,13 +4,12 @@ import { RouterModule } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { TelegramService } from '../../../shared/services/telegram.service';
-import { LanguageSwitcherComponent } from '../language-switcher/language-switcher.component';
 import { environment } from '../../../../environments/environment';
 
 @Component({
   selector: 'app-footer',
   standalone: true,
-  imports: [CommonModule, RouterModule, TranslateModule, LanguageSwitcherComponent, FormsModule],
+  imports: [CommonModule, RouterModule, TranslateModule, FormsModule],
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.scss']
 })
@@ -23,7 +22,7 @@ export class FooterComponent {
   isSent = false;
   message = '';
 
-  constructor(private telegramService: TelegramService) {}
+  constructor(private telegramService: TelegramService) { }
 
   submitEmailForm(form: NgForm): void {
     if (form.valid) {
