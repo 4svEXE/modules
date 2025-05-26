@@ -76,7 +76,9 @@
       "CTA": {
         "TITLE": "Дізнатися більше",
         "TEXT": "про встановлення модульних будинків"
-      }
+      },
+      "ALERT_P": "You can check the available models and their specifications with the manager.",
+      "ALERT_A": "Check via WhatsApp"
     },
     "PROFIT": {
       "TITLE_PART1": "Скільки можна",
@@ -254,5 +256,12 @@
     "MSG_7": "100% quality guarantee and certification under Czech building standards!",
     "MSG_8": "Minimal maintenance costs – save up to 40% on energy!",
     "MSG_9": "Rent it out to programmers, tourists, anglers, or bloggers for a detox or retreat!"
+  },
+  "ONETIME": {
+    "timer": "Remaining",
+    "discount_1": "Discounted by",
+    "discount_2": "when purchased by the end of spring",
+    "CTA_plchldr": "Phone number",
+    "CTA": "Get Discount"
   }
 }

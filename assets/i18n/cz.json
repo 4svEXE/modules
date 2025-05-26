@@ -76,7 +76,9 @@
       "CTA": {
         "TITLE": "Zjistit více",
         "TEXT": "o instalaci modulárních domů"
-      }
+      },
+      "ALERT_P": "Dostupné modely a jejich charakteristiky si můžete ověřit u manažera.",
+      "ALERT_A": "Ověřit přes WhatsApp"
     },
     "PROFIT": {
       "TITLE_PART1": "Kolik si můžete",
@@ -249,10 +251,17 @@
     "MSG_2": "Dům postavíme za jediný den – bez stavebního povolení!",
     "MSG_3": "Můžete pronajímat hned po instalaci!",
     "MSG_4": "Ekologický dům o rozloze 15 m² s nezávislým provozem.",
-    "MSG_5": "Ušetřete až 50 % nákladů oproti klasické výstavbě!",
+    "MSG_5": "Ušetřete až 50% nákladů oproti klasické výstavbě!",
     "MSG_6": "Pasivní příjem – skvělý způsob, jak zhodnotit svůj pozemek!",
     "MSG_7": "100% záruka kvality a certifikace podle českých stavebních norem!",
     "MSG_8": "Minimální náklady na údržbu – úspora až 40 % na energiích!",
     "MSG_9": "Pronajímejte programátorům, turistům, rybářům, blogerům na detox nebo retreat!"
+  },
+  "ONETIME": {
+    "timer": "Zbývají",
+    "discount_1": "Zlevněno o",
+    "discount_2": "při koupi do konce jara",
+    "CTA_plchldr": "Telefonní číslo",
+    "CTA": "Získat slevu"
   }
 }
