@@ -59,17 +59,16 @@ export class HomeComponent implements AfterViewInit {
     modules: [EffectCoverflow, Pagination, Navigation],
   };
 
-  constructor(private modalService: ModalService) {}
+  constructor(private modalService: ModalService) { }
 
   onVideoLoaded() {
     this.videoLoaded = true;
   }
 
   ngAfterViewInit() {
-    // Відкрити модалку через 500 мс
     setTimeout(() => {
       this.modalService.open();
-    }, 16000); // автостарт модалки - 20c
+    }, 35000); // автостарт модалки - 35c
   }
 }
 
