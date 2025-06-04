@@ -6,7 +6,7 @@ import { SwiperComponent } from '../swiper/swiper.component';
 import { MarqueeComponent } from "../marquee/marquee.component";
 import { TelegramService } from '../../services/telegram.service';
 import { PricePipe } from '../../pipes/price.pipe';
-import { discount, price, discountLabel } from '../../misc/prices';
+import { discount, price, discountLabel, priceDiscount } from '../../misc/prices';
 
 @Component({
   selector: 'app-one-time-offer',
@@ -43,7 +43,7 @@ export class OneTimeOfferComponent implements OnInit {
   price = price;
   discount = discount;
   discountLabel = discountLabel;
-  price_discount = Math.round(this.price * (1 - this.discount));
+  price_discount = priceDiscount
 
   ngOnInit(): void {
     this.updateTimeLeft();
