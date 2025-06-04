@@ -5,12 +5,13 @@ import { TranslateModule } from '@ngx-translate/core';
 import { SwiperComponent } from '../swiper/swiper.component';
 import { MarqueeComponent } from "../marquee/marquee.component";
 import { TelegramService } from '../../services/telegram.service';
+import { PricePipe } from './price.pipe';
 
 @Component({
   selector: 'app-one-time-offer',
   templateUrl: './one-time-offer.component.html',
   styleUrls: ['./one-time-offer.component.scss'],
-  imports: [CommonModule, FormsModule, TranslateModule, SwiperComponent, MarqueeComponent]
+  imports: [CommonModule, FormsModule, TranslateModule, SwiperComponent, MarqueeComponent, PricePipe]
 })
 export class OneTimeOfferComponent implements OnInit {
   deadline = new Date('2025-05-31T23:59:59');
@@ -36,8 +37,11 @@ export class OneTimeOfferComponent implements OnInit {
     './assets/img/gallery/interior/10.webp',
   ];
 
-  constructor(private telegramService: TelegramService) {}
+  constructor(private telegramService: TelegramService) { }
 
+  price = 861325;
+  discount = 0.17;
+  price_discount = Math.round(this.price * (1 - this.discount));
   ngOnInit(): void {
     this.updateTimeLeft();
     setInterval(() => this.updateTimeLeft(), 1000);

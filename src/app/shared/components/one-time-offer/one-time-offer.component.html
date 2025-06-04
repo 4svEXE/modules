@@ -10,8 +10,8 @@
   <div class="flex flex-col gap-2_ z-50">
     <p class="dark z-10 content-box">
       <strong class="flex flex-col">
-        <span class="old-price">861 325 Kč</span>
-        <span>715 900 Kč</span>
+        <span class="old-price">{{ price | price }}</span>
+        <span>{{ price_discount | price }}</span>
       </strong>
     </p>
     <p class="dark z-10 content-box mb-4 mini">
@@ -20,7 +20,11 @@
       {{ "ONETIME.discount_2" | translate }}!
     </p>
 
-    <form #offerForm="ngForm" (ngSubmit)="submitForm(offerForm)" *ngIf="!isSent">
+    <form
+      #offerForm="ngForm"
+      (ngSubmit)="submitForm(offerForm)"
+      *ngIf="!isSent"
+    >
       <input
         type="tel"
         name="phone"
@@ -29,7 +33,7 @@
         ngModel
       />
       <button type="submit">
-        {{ loading ? '...' : ('ONETIME.CTA' | translate) }}
+        {{ loading ? "..." : ("ONETIME.CTA" | translate) }}
       </button>
     </form>
 
