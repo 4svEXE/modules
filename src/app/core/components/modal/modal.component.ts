@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 
 import { Component, Input } from '@angular/core';
 import { ModalService } from './modal.service';
+import { discountLabel } from '../../../shared/misc/prices';
 // import { ContactFormComponent } from '../../components/contact-form/contact-form.component';
 // import { SocialLinksComponent } from '../../components/social-links/social-links.component';
 
@@ -15,9 +16,11 @@ import { ModalService } from './modal.service';
 export class ModalComponent {
   @Input() title = '';
 
-  isModalOpen:boolean = false;
+  isModalOpen: boolean = false;
 
-  constructor(public modalService: ModalService) {}
+  discountLabel = discountLabel;
+  constructor(public modalService: ModalService) { }
+
 
   ngOnInit() {
     this.modalService.modalStatus$.subscribe((isOpen) => {
