@@ -15,7 +15,7 @@ import { discount, price, discountLabel, priceDiscount } from '../../misc/prices
   imports: [CommonModule, FormsModule, TranslateModule, SwiperComponent, MarqueeComponent, PricePipe]
 })
 export class OneTimeOfferComponent implements OnInit {
-  deadline = new Date('2025-05-31T23:59:59');
+  deadline = new Date('2025-08-31T23:59:59');
   timeLeft = '';
   loading = false;
   isSent = false;

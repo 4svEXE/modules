@@ -41,6 +41,7 @@ import { OneTimeOfferComponent } from '../../shared/components/one-time-offer/on
 })
 export class HomeComponent implements AfterViewInit {
   videoLoaded = false;
+  modalAutostartDelay = 60;
 
   swiperConfig = {
     effect: 'coverflow',
@@ -68,7 +69,7 @@ export class HomeComponent implements AfterViewInit {
   ngAfterViewInit() {
     setTimeout(() => {
       this.modalService.open();
-    }, 35000); // автостарт модалки - 35c
+    }, 1000 * this.modalAutostartDelay); // автостарт модалки
   }
 }
 
