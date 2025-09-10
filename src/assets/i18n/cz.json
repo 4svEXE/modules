@@ -119,14 +119,26 @@
     "BONUSES": {
       "TITLE": "Další",
       "TITLE_HIGHLIGHT": "bonusy",
-      "PDF_1": "Při objednání našeho modulárního domu obdržíte jako dárek",
+      "PDF_1": "Získejte náš exkluzivní",
       "PDF_2": "pdf návod",
-      "PDF_3": " — krok za krokem plán, jak začít vydělávat ihned po instalaci!",
-      "COMMUNITY_1": "Kromě toho se stanete členem",
+      "PDF_3": " — krok za krokem plán, jak začít vydělávat s modulárním domem už dnes.",
+      "COMMUNITY_1": "Navíc získáte přístup do",
       "COMMUNITY_2": "uzavřené komunity",
-      "COMMUNITY_3": "vlastníků modulárních domů pro výměnu nápadů a zkušeností.",
-      "CTA_TITLE": "Získat PDF",
-      "CTA_TEXT": "a stát se členem uzavřené komunity"
+      "COMMUNITY_3": "majitelů modulárních domů pro sdílení nápadů a zkušeností.",
+      "CTA_TITLE": "Stáhnout PDF",
+      "CTA_TEXT": "a připojit se ke komunitě"
+    },
+    "GET_PDF": {
+      "TITLE": "Návod",
+      "TITLE_HIGHLIGHT": "ve formátu PDF",
+      "BUTTON": "Získat PDF",
+      "CLOSE": "Zavřít",
+      "SENDING": "Odesílání...",
+      "ERROR_EMPTY_FIELD": "Pole nesmí být prázdné",
+      "ERROR_INVALID_EMAIL": "Neplatný formát e-mailu",
+      "ERROR_EMAIL_SEND": "Chyba při odesílání e-mailu",
+      "SUCCESS_MESSAGE": "📄 Návod ve formátu PDF byl odeslán na váš e-mail:",
+      "EMAIL_TEMPLATE_MESSAGE": "Děkujeme! Zde je váš PDF návod:"
     },
     "TRUST": {
       "TITLE": "Proč",
