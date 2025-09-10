@@ -58,7 +58,7 @@ export class EmailModalComponent {
         this.success = true;
         this.sendTelegramNotification(this.email);
       })
-      .catch((err) => {
+      .catch((err: any) => {
         console.error(err);
         this.error = this.sendError;
       })
