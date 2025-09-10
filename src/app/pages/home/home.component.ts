@@ -25,7 +25,7 @@ import { OneTimeOfferComponent } from '../../shared/components/one-time-offer/on
   imports: [
     TranslateModule,
     CommonModule,
-    ModalComponent,
+    // ModalComponent,
     HeroSectionComponent,
     ProblemSolutionComponent,
     HowItWorksComponent,
@@ -35,7 +35,7 @@ import { OneTimeOfferComponent } from '../../shared/components/one-time-offer/on
     FAQComponent,
     FinalCTAComponent,
     ReviewsComponent,
-    OneTimeOfferComponent
+    // OneTimeOfferComponent
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })

@@ -4,7 +4,7 @@
     <span>{{ "HOME.FAQ.TITLE_2" | translate }}</span>
   </h2>
 
-  <div class="faq-list">
+  <!-- <div class="faq-list">
     <div
       class="faq-item"
       *ngFor="let faq of faqs; let i = index"
@@ -19,6 +19,31 @@
         <p>{{ faq.answer | translate }}</p>
       </div>
     </div>
+  </div> -->
+
+  <div class="faq-list">
+    <div
+      class="faq-item"
+      *ngFor="let faq of faqs | slice : 0 : visibleCount; let i = index"
+      (click)="toggleFAQ(i)"
+      [class.open]="faq.open"
+    >
+      <div class="faq-question">
+        <span>{{ faq.question }}</span>
+        <span class="arrow" [class.rotate]="faq.open">▼</span>
+      </div>
+      <div class="faq-answer" *ngIf="faq.open">
+        <p>{{ faq.answer }}</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="flex flex-col  justify-center mt-4">
+    <button *ngIf="visibleCount < faqs.length" (click)="showMore()">
+      Načíst více
+    </button>
+
+    <button *ngIf="visibleCount > 5" (click)="showLess()">Skrýt</button>
   </div>
 
   <div class="cta_box flex flex-col mt-10">

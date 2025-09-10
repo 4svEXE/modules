@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import { LanguageService } from '../../services/language.service';
-import { NgClass } from '@angular/common';
+// import { NgClass } from '@angular/common';
 
 @Component({
-  imports: [NgClass],
+  // imports: [NgClass],
   selector: 'app-language-switcher',
   templateUrl: './language-switcher.component.html',
   styleUrls: ['./language-switcher.component.scss']
