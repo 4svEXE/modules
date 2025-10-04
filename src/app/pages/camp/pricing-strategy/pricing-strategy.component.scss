@@ -1,0 +1,30 @@
+
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.text-block {
+  margin-bottom: 2rem;
+  p {
+    font-size: 1rem;
+    color: #374151;
+    line-height: 1.6;
+  }
+}
+
+.summary-block {
+  background: #f9fafb;
+  border-left: 4px solid #10b981;
+  border-radius: 0.5rem;
+  padding: 1rem 1.25rem;
+  font-size: 1rem;
+  line-height: 1.6;
+
+  strong {
+    color: #111827;
+  }
+}

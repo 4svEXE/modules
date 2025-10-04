@@ -1,4 +1,3 @@
-import { ModalComponent } from './../../core/components/modal/modal.component';
 import { Component, AfterViewInit, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { CommonModule } from '@angular/common';
@@ -14,7 +13,10 @@ import { TrustSectionComponent } from './trust-section/trust-section.component';
 import { FAQComponent } from './faq/faq.component';
 import { FinalCTAComponent } from './final-cta/final-cta.component';
 import { ModalService } from '../../core/components/modal/modal.service';
-import { OneTimeOfferComponent } from '../../shared/components/one-time-offer/one-time-offer.component';
+import { BlogSuggestionsComponent } from "../../shared/components/blog-suggestions/blog-suggestions.component";
+// import { OneTimeOfferComponent } from '../../shared/components/one-time-offer/one-time-offer.component';
+// import { ModalComponent } from './../../core/components/modal/modal.component';
+
 
 
 @Component({
@@ -35,8 +37,8 @@ import { OneTimeOfferComponent } from '../../shared/components/one-time-offer/on
     FAQComponent,
     FinalCTAComponent,
     ReviewsComponent,
-    // OneTimeOfferComponent
-  ],
+    BlogSuggestionsComponent
+],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class HomeComponent implements AfterViewInit {

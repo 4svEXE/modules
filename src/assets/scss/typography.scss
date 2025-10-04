@@ -21,8 +21,8 @@ h6 {
   }
 }
 
-p{
-  b{
+p {
+  b {
     color: var(--accent-color);
   }
 }
@@ -31,7 +31,8 @@ p {
   font-weight: normal;
 
   span,
-  strong, li {
+  strong,
+  li {
     color: var(--accent-color);
   }
 
@@ -40,7 +41,8 @@ p {
   }
 }
 
-li, b{
+li,
+b {
   .dark & {
     color: var(--text-color-headings-light);
   }
@@ -82,6 +84,57 @@ h2 {
 
   }
 }
+
+h3 {
+  margin-top: 20px;
+  font-size: 48px;
+  text-align: left;
+  padding-bottom: 20px;
+  line-height: normal;
+
+  text-shadow: var(--box-shadow) !important;
+  color: var(--primary-color);
+  font-weight: bold;
+
+  font-family: var(--font-family-headings) !important;
+
+
+  @media (max-width: $media-tablet) {
+    display: inline-block;
+    text-align: center;
+    font-size: 28px !important;
+    font-weight: bold !important;
+
+    padding-bottom: 20px;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+h4 {
+  margin-top: 16px;
+  font-size: 36px;                // ТРОХИ менший за h3
+  text-align: left;
+  padding-bottom: 16px;
+  line-height: normal;
+
+  text-shadow: var(--box-shadow) !important;
+  color: var(--primary-color);
+  font-weight: 600;               // Трохи легший за h3
+
+  font-family: var(--font-family-headings) !important;
+
+  @media (max-width: $media-tablet) {
+    display: inline-block;
+    text-align: center;
+    font-size: 22px !important;   // Менший на мобільних
+    font-weight: 600 !important;
+
+    padding-bottom: 16px;
+    width: 100%;
+  }
+}
+
 
 p {
   font-size: 1rem;

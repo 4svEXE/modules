@@ -1,0 +1,110 @@
+<section class="p-6 bg-white rounded-xl shadow-md">
+  <h3>1.2. Стратегія ціноутворення та підвищення маржі</h3>
+
+  <p class="text-gray-700 mb-6">
+    Головна перевага МБ полягає у можливості значно підвищити середній чек і
+    маржу, переходячи від цінової конкуренції до ціноутворення, орієнтованого на
+    цінність.
+  </p>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <!-- Картка 1 -->
+    <div class="p-5 border rounded-xl hover:shadow-lg transition">
+      <h4 class="text-xl font-semibold mb-2 text-blue-700">Базовий комфорт</h4>
+      <p class="text-lg font-bold text-gray-800 mb-3">від €90 / доба</p>
+      <p class="text-gray-600">
+        Локація далеко від туристичних потоків, мінімальна інфраструктура.
+      </p>
+    </div>
+
+    <!-- Картка 2 -->
+    <div class="p-5 border rounded-xl hover:shadow-lg transition">
+      <h4 class="text-xl font-semibold mb-2 text-green-700">
+        Оптимальний (Високе завантаження)
+      </h4>
+      <p class="text-lg font-bold text-gray-800 mb-3">
+        €250–€260 (високий сезон), €170 (низький сезон)
+      </p>
+      <p class="text-gray-600">
+        Природна локація, наявність інфраструктури (басейн, річка, купель).
+      </p>
+    </div>
+
+    <!-- Картка 3 -->
+    <div class="p-5 border rounded-xl hover:shadow-lg transition">
+      <h4 class="text-xl font-semibold mb-2 text-purple-700">
+        Преміум (Високий чек / Низьке завантаження)
+      </h4>
+      <p class="text-lg font-bold text-gray-800 mb-3">€290–€320 / доба</p>
+      <p class="text-gray-600">
+        Виняткова локація та інфраструктура, завантаження зосереджене на
+        вихідних (до 25% на місяць), але забезпечує достатній прибуток
+        (наприклад, до €1500 з будинку).
+      </p>
+    </div>
+  </div>
+
+   <div class="two-cols mt-10">
+      <figure class="flex">
+        <figcaption class="flex flex-col gap-2">
+          <app-swiper [slides]="slides" />
+        </figcaption>
+      </figure>
+    </div>
+
+  <p class="text-gray-700 mt-6">
+    За результатами тестової експлуатації, два модульні будинки можуть
+    генерувати близько €3,700–€3,800 чистого прибутку на місяць при середньому
+    завантаженні 58%. Ця модель продає не просто ночівлю, а емоцію та відпочинок
+    (ретріт, усамітнення або доступ до туристичних маршрутів).
+  </p>
+
+   <!-- CTA -->
+  <app-call-to-action
+    link="#contact"
+    title="Написати"
+  />
+</section>
+
+<section class="p-6 bg-white rounded-xl shadow-md mt-10">
+  <h3 class="my-4">1.3. Вирішення інфраструктурних викликів</h3>
+  <p class="text-gray-700 mb-4">
+    МБ дозволяють мінімізувати залежність від стаціонарних мереж, що є критичним
+    для старих кемпінгів:
+  </p>
+
+  <div class="space-y-4">
+    <div class="p-4 border rounded-lg">
+      <h4 class="font-semibold text-lg mb-2">Водопостачання</h4>
+      <p class="text-gray-700">
+        Крім класичного підключення, можуть використовуватися автономні системи
+        з баками (біла, сіра, чорна вода) та системою розумного перехрещення, що
+        значно подовжує інтервали між обслуговуванням.
+      </p>
+    </div>
+
+    <div class="p-4 border rounded-lg">
+      <h4 class="font-semibold text-lg mb-2">Каналізація</h4>
+      <p class="text-gray-700">
+        Тимчасовим та бюджетним рішенням є знімна каналізація (ємності 1–1.5 м³,
+        що відкачуються раз на 1.5–2 тижні). Дорожчий варіант — стаціонарний
+        септик або біосептик (який переробляє 99% відходів, але вимагає
+        дозволу).
+      </p>
+    </div>
+
+    <div class="p-4 border rounded-lg">
+      <h4 class="font-semibold text-lg mb-2">Опалення</h4>
+      <p class="text-gray-700">
+        Базова комплектація включає енергоощадні теплові насоси (кондиціонери)
+        та електричні обігрівачі. Вони ефективні до -10°C, а в сильні морози
+        можуть працювати в парі. Додаткові опції, як-от інфрачервоні панелі чи
+        дров'яний камін, підвищують комфорт гостя.
+      </p>
+    </div>
+  </div>
+</section>
+
+<div class="flex p-4">
+  <a class="button-primary " routerLink="/legal-requirements">legal-requirements</a>
+</div>

@@ -12,11 +12,14 @@
     [navigation]="true"
     [pagination]="false"
   >
-    <swiper-slide
-      class="tranding-slide"
-      *ngFor="let slide of slides"
-    >
-      <img [src]="slide" alt="carousel image"/>
+    <swiper-slide class="tranding-slide" *ngFor="let slide of slides">
+      @if (!isVideo) {
+      <img [src]="slide" alt="carousel image" />
+      } @if (isVideo) {
+      <video [src]="slide" controls="true" width="600">
+        Ваш браузер не підтримує відтворення відео.
+      </video>
+      }
     </swiper-slide>
   </swiper-container>
 </div>

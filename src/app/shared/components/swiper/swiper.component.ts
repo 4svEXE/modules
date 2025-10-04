@@ -15,6 +15,7 @@ register(); // Реєструємо Swiper як Web Component
 })
 export class SwiperComponent {
   @Input() slides: string[] = ['1', '2']; // Масив слайдів
+  @Input() isVideo: boolean = false
   @Input() swiperConfig = {
     effect: 'coverflow',
     grabCursor: true,

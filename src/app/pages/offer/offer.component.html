@@ -1,0 +1,289 @@
+<!-- <section> -->
+<div class="hero dark">
+  <video
+    class="background-video loaded absolute top-0 left-0 w-full h-full object-cover"
+    [muted]="true"
+    autoplay
+    loop
+    playsinline
+    webkit-playsinline
+    disableRemotePlayback
+    preload="auto"
+    [attr.poster]="videoLoaded ? '' : './assets/img/01.jpg'"
+    (loadeddata)="onVideoLoaded()"
+  >
+    <source src="./assets/videos/hiro.mp4" type="video/mp4" />
+  </video>
+
+  <!-- Hero Content -->
+  <div class="container relative z-20 flex flex-col gap-20">
+    <!-- Stats -->
+    <div class="hero-header grid grid-cols-3 gapy-6 text-center text-white">
+      <div class="flex flex-col items-center justify-center gap-2">
+        <span>Setup</span>
+        <p>30 Days</p>
+      </div>
+      <div class="bordered flex flex-col items-center justify-center gap-2">
+        <span>Pays Off</span>
+        <p>2-4 Seasons</p>
+      </div>
+      <div class="flex flex-col items-center justify-center gap-2">
+        <span>Profit</span>
+        <p>€3,700–€3,800</p>
+      </div>
+    </div>
+
+    <!-- Hero Title -->
+    <div
+      class="hero-title flex flex-col items-center text-center mb-12 text-white"
+    >
+      <h1 class="text-4xl md:text-5xl font-bold leading-tight">
+        Прибутковий цілорічний <br />
+        глемпінг з DOMIVKA
+      </h1>
+      <p class="mt-4 text-lg md:text-xl max-w-2xl">
+        Повністю готові модульні будинки під ключ, збільшіть дохід від
+        $1,200–$2,500+ на місяць за 30 днів
+      </p>
+    </div>
+
+    <!-- CTA -->
+    <app-call-to-action
+      link="#contact-form"
+      [title]="'Дивитись моделі'"
+      [text]="'Наш менеджер надішле Вам список моделей та цін.'"
+    ></app-call-to-action>
+  </div>
+</div>
+<!-- </section> -->
+
+<!-- Features / Benefits -->
+<section class="py-16 bg-gray-100">
+  <div class="container mx-auto max-w-6xl grid md:grid-cols-3 gap-8">
+    <div
+      class="bg-white py-6 rounded-lg shadow hover:shadow-lg transition text-center"
+    >
+      <h3 class="text-xl font-semibold mb-2">
+        Екстремальна Енергоефективність, стійкість до спеки та морозів
+      </h3>
+      <small class="px-2"
+        >Що дозволяє здавати будиночки цілий рік і підвищити дохід вдвічі
+      </small>
+      <div class="two-cols flex w-full items-center">
+        <figure class="flex">
+          <figcaption class="flex flex-col gap-2 max-w-full overflow-hidden">
+            <app-swiper [slides]="slides3" [isVideo]="true" />
+          </figcaption>
+        </figure>
+      </div>
+      <p class="p-4">
+        PIR-панелі (8 см стіни, підлога; 15 см стеля), будинок витримує -25°C до
+        +40°C, рекуперація повітря, панорамні енергозберігаючі вікна.
+      </p>
+    </div>
+    <div
+      class="bg-white py-6 rounded-lg shadow hover:shadow-lg transition text-center"
+    >
+      <h3 class="text-xl font-semibold mb-2">Швидкість та Гнучкість</h3>
+      <small class="px-2">Швидка доставка та встановлення</small>
+      <div class="two-cols flex w-full items-center">
+        <figure class="flex">
+          <figcaption class="flex flex-col gap-2 max-w-full overflow-hidden">
+            <app-swiper [slides]="slides2" [isVideo]="true" />
+          </figcaption>
+        </figure>
+      </div>
+      <p class="p-4">
+        Від замовлення до першого гостя — 30 днів. Встановлення 1–4 години,
+        легке підключення комунікацій, мобільність для зміни локації,
+        встановлюються без фундаменту тому не портять локацію.
+      </p>
+    </div>
+    <div
+      class="bg-white py-6 rounded-lg shadow hover:shadow-lg transition text-center"
+    >
+      <h3 class="text-xl font-semibold mb-2">Комплектація та Якість</h3>
+      <small class="px-2"
+        >Викликає вау ефект, що позитивно впливає на ціну та відгуки</small
+      >
+      <div class="two-cols max-w-full">
+        <figure class="flex max-w-full overflow-hidden">
+          <figcaption class="flex flex-col gap-2 max-w-full">
+            <app-swiper [slides]="slides" />
+          </figcaption>
+        </figure>
+      </div>
+      <p class="p-4">
+        Душ, санвузол, кухня, Wi-Fi, кондиціонер, опалення. Довговічність понад
+        50 років. Преміум-опція: Hot-Tub при оптовій купівлі.
+      </p>
+    </div>
+  </div>
+
+  <div class="container">
+  <app-call-to-action
+    link="#contact-form"
+    title="Написати"
+  />
+</div>
+
+</section>
+
+
+
+<!-- ROI Table -->
+<section class="py-10 container mx-auto max-w-5xl">
+  <h2 class="text-3xl font-bold text-center mb-8">
+    Результати для Власника Кемпінгу (ROI)
+  </h2>
+  <div class="overflow-x-auto">
+    <table
+      class="table-auto w-full border-collapse border bg-amber-50 border-gray-300 text-center"
+    >
+      <thead>
+        <tr class="bg-gray-200">
+          <th class="border border-gray-300 px-4 py-2">Показник</th>
+          <th class="border border-gray-300 px-4 py-2">Традиційний Кемпінг</th>
+          <th class="border border-gray-300 px-4 py-2">DOMIVKA</th>
+          <th class="border border-gray-300 px-4 py-2">Перевага</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="border border-gray-300 px-4 py-2">Середній Дохід</td>
+          <td class="border border-gray-300 px-4 py-2">Низький</td>
+          <td class="border border-gray-300 px-4 py-2">€3,700–€3,800/місяць</td>
+          <td class="border border-gray-300 px-4 py-2">
+            Зростання доходу у 2–3 рази
+          </td>
+        </tr>
+        <tr>
+          <td class="border border-gray-300 px-4 py-2">Ціна за Ніч</td>
+          <td class="border border-gray-300 px-4 py-2">Низька</td>
+          <td class="border border-gray-300 px-4 py-2">€210–€320</td>
+          <td class="border border-gray-300 px-4 py-2">
+            Комфорт дозволяє підняти ціну
+          </td>
+        </tr>
+        <tr>
+          <td class="border border-gray-300 px-4 py-2">Окупність (ROI)</td>
+          <td class="border border-gray-300 px-4 py-2">Довга/Невизначена</td>
+          <td class="border border-gray-300 px-4 py-2">2–4 сезони</td>
+          <td class="border border-gray-300 px-4 py-2">
+            Швидка віддача інвестицій
+          </td>
+        </tr>
+        <tr>
+          <td class="border border-gray-300 px-4 py-2">Тривалість Сезону</td>
+          <td class="border border-gray-300 px-4 py-2">Тільки літо</td>
+          <td class="border border-gray-300 px-4 py-2">Цілорічна</td>
+          <td class="border border-gray-300 px-4 py-2">
+            Зимові бронювання покривають частину річних витрат
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section class="py-10">
+  <div class="container mx-auto max-w-5xl text-center">
+    <h2 class="text-3xl font-bold mb-8">
+      Що ви отримуєте, інвестуючи в DOMIVKA
+    </h2>
+    <div class="grid md:grid-cols-4 gap-6">
+      <div class="bg-white p-6 rounded-lg shadow">
+        <h3 class="text-4xl font-bold text-blue-600">30</h3>
+        <p>Днів від замовлення до першого гостя</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow">
+        <h3 class="text-4xl font-bold text-blue-600">50+</h3>
+        <p>Років експлуатації модульного будинку</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow">
+        <h3 class="text-4xl font-bold text-blue-600">10</h3>
+        <p>Років гарантії та сервісне обслуговування</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow">
+        <h3 class="text-4xl font-bold text-blue-600">58%</h3>
+        <p>Середнє завантаження наших клієнтів</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow">
+        <h3 class="text-4xl font-bold text-blue-600">€2,000+</h3>
+        <p>Прибуток з одного модуля на місяць</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow">
+        <h3 class="text-4xl font-bold text-blue-600">до 20%</h3>
+        <p>Економія при покупці оптом</p>
+      </div>
+    </div>
+  </div>
+
+  <app-call-to-action
+    link="#contact-form"
+    title="Отримати"
+    text="Напишіть менеджеру щоб обрати модель"
+  />
+</section>
+
+<!-- Contact / CTA Form -->
+<section
+  id="contact-form"
+  class="py-16 bg-gradient-to-r from-cyan-400 to-blue-500 text-white text-center"
+>
+  <app-final-cta />
+</section>
+
+<app-reviews />
+
+<section class="py-16">
+  <div class="container mx-auto max-w-4xl text-center">
+    <h2 class="text-3xl font-bold mb-8">Вас турбує?</h2>
+    <div class="grid md:grid-cols-2 gap-6 text-left">
+      <div class="bg-white p-6 rounded-lg shadow">
+        <h3 class="font-semibold mb-2">Складні дозволи?</h3>
+        <p>
+          Ми працюємо за системою Ohlášení, без потреби у повному будівельному
+          дозволі.
+        </p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow">
+        <h3 class="font-semibold mb-2">Високі витрати на запуск?</h3>
+        <p>
+          Модульний будинок DOMIVKA встановлюється швидко, без капітального
+          фундаменту і з мінімальними OPEX.
+        </p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow">
+        <h3 class="font-semibold mb-2">Що з обслуговуванням?</h3>
+        <p>
+          Повне гарантійне та сервісне обслуговування на території Чехії.
+          Автоматизовані процеси — лише 5–10 год/міс.
+        </p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow">
+        <h3 class="font-semibold mb-2">Чи окупиться інвестиція?</h3>
+        <p>
+          ROI 2–4 сезони, середній прибуток €1,850–€2,000/модуль, підтверджено
+          кейсами.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-16 text-white text-center dark">
+  <h2 class="text-3xl font-bold mb-4">
+    Запустіть свій цілорічний глемпінг вже цього сезону!
+  </h2>
+  <p class="mb-6 max-w-2xl mx-auto">
+    Місця обмежені, перші 10 замовлень отримують персональну консультацію та
+    бонуси: Hot-Tub у подарунок, оптові знижки, швидке встановлення.
+  </p>
+
+  <app-call-to-action
+    link="#contact-form"
+    title="Отримати"
+    text="Отримати персональниу знижку та подарунки"
+  />
+</section>

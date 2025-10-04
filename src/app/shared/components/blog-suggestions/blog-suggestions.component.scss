@@ -1,0 +1,66 @@
+.card {
+  padding: 10px;
+  max-width: 360px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  background-color: #fff;
+  font-family: sans-serif;
+  border-radius: 8px;
+  transition: transform 0.3s, box-shadow 0.3s;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+      0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  }
+
+  .header {
+    margin-top: 0.5rem;
+
+    .image {
+      width: 100%;
+      height: 150px;
+      border-radius: 4px;
+      background-color: rgb(205, 235, 255);
+      padding: 9px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+
+      .tag {
+        text-transform: capitalize;
+        background-color: rgba(0, 0, 0, 0.425);
+        padding: 2px 8px;
+        border-radius: 4px;
+        color: #fff;
+        font-size: 0.75rem;
+      }
+    }
+
+    .date {
+      display: flex;
+      font-size: 0.75rem;
+      line-height: 1rem;
+      align-items: center;
+      margin-top: 4px;
+    }
+  }
+
+  .info {
+    margin-top: 1rem;
+
+    .title {
+      display: block;
+      font-size: 1.25rem;
+      line-height: 1.35rem;
+      font-weight: 600;
+      padding: 14px 0 5px 0;
+    }
+
+    .description {
+      line-height: 1.375;
+      color: #4a5568; // сірий текст
+      font-size: 0.95rem;
+    }
+  }
+}
