@@ -12,8 +12,7 @@
     "deploy:gh": "npx angular-cli-ghpages --dir=dist/browser/",
     "update:gh": "npm run build && npm run deploy:gh",
     "deploy:ftp": "node deploy.js",
-    "update:ftp": "npm run build:prod && npm run deploy:ftp",
-    "_update:ftp": "npm run build && npm run postbuild && npm run deploy:ftp"
+    "update:ftp": "npm run build:prod && npm run deploy:ftp"
   },
   "private": true,
   "dependencies": {

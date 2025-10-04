@@ -1,3 +1,4 @@
+import { ModelsComponent } from './models/models.component';
 import { Component, AfterViewInit, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { CommonModule } from '@angular/common';
@@ -37,7 +38,8 @@ import { BlogSuggestionsComponent } from "../../shared/components/blog-suggestio
     FAQComponent,
     FinalCTAComponent,
     ReviewsComponent,
-    BlogSuggestionsComponent
+    BlogSuggestionsComponent,
+    ModelsComponent
 ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })

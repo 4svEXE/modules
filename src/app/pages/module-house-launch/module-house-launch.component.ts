@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { SwiperComponent } from "../../shared/components/swiper/swiper.component";
 import { RouterLink } from '@angular/router';
+import { BlogSuggestionsComponent } from "../../shared/components/blog-suggestions/blog-suggestions.component";
 
 @Component({
   selector: 'app-module-house-launch',
-  imports: [SwiperComponent, RouterLink],
+  imports: [SwiperComponent, RouterLink, BlogSuggestionsComponent],
   templateUrl: './module-house-launch.component.html',
   styleUrl: './module-house-launch.component.scss'
 })
